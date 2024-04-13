@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <nav className=" fixed w-full z-30 flex justify-center pt-7 md:pt-[25px] xl:pt-4 bg-transparen">
-      <div className="w-[78%] bg-black h-30 rounded-full flex items-center justify-between py-3 md:py-3 xl:py-[16px] px-8 text-white animate-slide-in-top">
+      <div className="w-[78%] bg-black h-30 rounded-full flex items-center justify-between py-3 md:py-3 xl:py-[16px] px-8 text-white">
         <div className="text-md sm:hidden">DA</div>
         <div className="hidden sm:block">Danadel</div>
         <ul className="hidden md:flex gap-4">
