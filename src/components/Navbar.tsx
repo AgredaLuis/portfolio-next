@@ -2,19 +2,26 @@
 import { motion, useCycle, AnimatePresence, MotionConfig } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
+import { AiOutlineMail } from "react-icons/ai";
+import { BsFillPersonLinesFill } from "react-icons/bs";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Navbar = () => {
   const [mobileNav, toggleOpen] = useCycle(false, true);
   const [navOpen, setNavOpen] = useState(false);
 
   return (
-    <nav className=" fixed w-full z-30 flex justify-center pt-7 md:pt-[25px] xl:pt-4 bg-transparen">
-      <div className="w-[78%] bg-black h-30 rounded-full flex items-center justify-between py-3 md:py-3 xl:py-[16px] px-8 text-white">
+    <nav className="fixed w-full z-10 flex justify-center pt-7 md:pt-[25px] xl:pt-4 bg-transparen">
+      <div className="w-[78%] z-20 bg-black h-30 rounded-full flex items-center justify-between py-3 md:py-3 xl:py-[16px] px-8 text-white">
         <div className="text-md sm:hidden">DA</div>
         <div className="hidden sm:block">Danadel</div>
         <ul className="hidden md:flex gap-4">
-          <li><Link href="/#about">About</Link></li>
-          <li><Link href="/#projects">Projects</Link></li>
+          <li>
+            <Link href="/#about">About</Link>
+          </li>
+          <li>
+            <Link href="/#projects">Projects</Link>
+          </li>
           <li>Skills</li>
         </ul>
         <div className="flex gap-4">
@@ -80,7 +87,7 @@ const Navbar = () => {
               initial="closed"
               animate="open"
               exit="closed"
-              className="fixed h-screen inset-0 bg-blue-600 space-y-10 p-6 flex flex-col justify-center"
+              className="fixed top-0 h-screen w-screen bg-blue-600 p-6 flex flex-col justify-center"
             >
               <motion.div
                 variants={{
@@ -93,7 +100,9 @@ const Navbar = () => {
                   <li className="py-4 text-4xl font-bold text-white">
                     Projects
                   </li>
-                  <li className="py-4 text-4xl font-bold text-white">Contact</li>
+                  <li className="py-4 text-4xl font-bold text-white">
+                    Contact
+                  </li>
                 </ul>
               </motion.div>
               <motion.div
@@ -114,17 +123,26 @@ const Navbar = () => {
                     opacity: 1,
                   },
                 }}
-                className="list-none flex justify-center gap-x-4"
+                className="list-none flex justify-center"
               >
-                <li>
-                  <div className="bg-white rounded-lg w-8 h-8"></div>
-                </li>
-                <li>
-                  <div className="bg-white rounded-lg w-8 h-8"></div>
-                </li>
-                <li>
-                  <div className="bg-white rounded-lg w-8 h-8"></div>
-                </li>
+                <div className="flex items-center justify-between max-w-[330px] m-auto py-4 gap-x-4">
+                  <div className="bg-[#ecf0f3] rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <FaLinkedinIn />
+                  </div>
+                  <div className="bg-[#ecf0f3] rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <FaGithub />
+                  </div>
+                  <Link href="/#contact">
+                    <div className="bg-[#ecf0f3] rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <AiOutlineMail />
+                    </div>
+                  </Link>
+                  <Link href="/resume">
+                    <div className="bg-[#ecf0f3] rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <BsFillPersonLinesFill />
+                    </div>
+                  </Link>
+                </div>
               </motion.ul>
             </motion.div>
           </MotionConfig>

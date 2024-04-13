@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -18,13 +17,17 @@ const ProjectItem = ({
   backgroundVideo,
   projectUrl,
 }: Props) => {
-  /* 
-  public\oneWayTravelVideo.mp4 */
   return (
     <div className=" flex items-center justify-center h-auto w-full xshadow-xl xshadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]">
       <div className="relative">
         {backgroundVideo ? (
-          <video src={backgroundVideo} autoPlay loop muted className="rounded-xl group-hover:opacity-10 object-cover" />
+          <video
+            src={backgroundVideo}
+            autoPlay
+            loop
+            muted
+            className="rounded-xl group-hover:opacity-10 object-cover"
+          />
         ) : (
           <Image
             className="rounded-xl group-hover:opacity-10 object-cover"

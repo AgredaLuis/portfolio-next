@@ -5,17 +5,17 @@ import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
   return (
-    <div id="projects" className="w-full py-4 bg-black text-white">
+    <div id="projects" className="w-full py-4 bg-black rounded-t-[30px] text-white">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Projects
         </p>
-        <h2 className="py-4">Selected Work&apos;s</h2>
+        <h2 className="py-6 ">Selected Work&apos;s</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
-            title="Property Finder"
+            title="Gericht Restaurant"
             backgroundImg="/restaurante.png"
-            projectUrl="/property"
+            projectUrl="/restaurant"
             tech="React JS"
           />
           <ProjectItem
@@ -26,9 +26,9 @@ const Projects = () => {
             tech="Next Js"
           />
           <ProjectItem
-            title="Crypto App"
+            title="Meals App"
             backgroundImg="/mealsApp.png"
-            projectUrl="/crypto"
+            projectUrl="/SocialMedia"
             tech="React JS"
           />
           {/*
