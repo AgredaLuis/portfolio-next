@@ -1,5 +1,4 @@
-import Image from "next/image";
-import Link from "next/link";
+
 import React from "react";
 
 import ProjectItem from "./ProjectItem";
@@ -21,7 +20,7 @@ const Projects = () => {
           />
           <ProjectItem
             title="OneWayTravel"
-            backgroundImg="./oneWayTravel.png"
+            backgroundImg="/oneWayTravel.png"
             backgroundVideo="/oneWayTravelVideo.mp4"
             projectUrl="/OneWayTravel"
             tech="Next Js"
