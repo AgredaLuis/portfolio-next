@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="w-full py-4 bg-black rounded-t-[30px] text-white flex items-center justify-center"
+      className="w-full py-4 bg-black rounded-t-[70px] text-white flex items-center justify-center"
     >
       <div className="max-w-[1240px] px-8 py-16">
         <p className="text-xl m-auto tracking-widest uppercase text-[#5651e5]">

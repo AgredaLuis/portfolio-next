@@ -1,17 +1,18 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { FaCircleCheck } from "react-icons/fa6";
 
 const About = () => {
   return (
     <div id="about" className="w-full px-4 flex items-center py-16 md:px-4">
-      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-6 bg-black p-8 rounded-[3rem] ">
+      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-6 bg-black p-8 rounded-[3rem]">
         <div className="col-span-2 ">
           <p className="uppercase text-xl tracking-widest text-[#5651e5]">
             About
           </p>
-          <h2 className="py-4 px-1 text-white">What I Do</h2>
-          <p className="py-2 text-white ">
+          <h2 className="py-4 md:mx-2 text-white text-4xl">What I Do</h2>
+          <p className="py-2 w-[90%] text-white text-justify">
             I specialize in building (and occasionally designing) mobile
             responsive front-end UI applications that connect with API’s and
             other backend technologies. I create custom-coded websites that are
@@ -19,20 +20,55 @@ const About = () => {
             scalability, I also optimize your online presence to elevate your
             visibility in search rankings
           </p>
-          <div className="m-4 h-px bg-white"></div>
-          <h2 className="py-4 px-1 text-white">Who I am</h2>
-          <p className="py-2 text-white">
-            I’m passionate about learning new technologies and understand there
-            is more than one way to accomplish a task. Though I am most
-            proficient in building front-end applications using HTML, CSS,
-            Javascript, and React, also I believe that being a great developer
-            is not using one specific language, but choosing the best tool for
-            the job.
-          </p>
-          <p className="py-2 text-white">
-            <span className="text-[#5651e5] ">(Future)</span> Computer Science
-            Engineer specializing in building...{" "}
-          </p>
+          <div className="my-2 h-px w-[90%] bg-white"></div>
+          <div className="flex flex-col md:flex-row w-[80%] md:items-center justify-between py-4 mx-auto">
+            <div className="p-4">
+              <h3 className="font-bold text-[#5651e5] pb-1">Web Development</h3>
+              <p className="text-gray-400 flex items-center py-1 gap-2">
+                <FaCircleCheck className="text-[#ecf0f3]"/>
+                Scalability
+              </p>
+              <p className="text-gray-400 flex items-center py-1 gap-2">
+                <FaCircleCheck className="text-[#ecf0f3]" />
+                CMS Integration
+              </p>
+              <p className="text-gray-400 flex items-center py-1 gap-2">
+                <FaCircleCheck className="text-[#ecf0f3]" />
+                Animations
+              </p>
+            </div>
+            <div className=" p-4">
+              <h3 className="font-bold text-[#5651e5] pb-1">Web Design</h3>
+              <p className="text-gray-400 flex items-center py-1 gap-2">
+                <FaCircleCheck className="text-[#ecf0f3]" />
+                Responsive Design
+              </p>
+              <p className="text-gray-400 flex items-center py-1 gap-2">
+                <FaCircleCheck className="text-[#ecf0f3]" />
+                UX writing
+              </p>
+              <p className="text-gray-400 flex items-center py-1 gap-2">
+                <FaCircleCheck className="text-[#ecf0f3]" />
+                Minimalistic Design
+              </p>
+            </div>
+            <div className="p-4">
+              <h3 className="font-bold text-[#5651e5] ">SEO</h3>
+              <p className="text-gray-400 flex items-center py-1 gap-2">
+                <FaCircleCheck className="text-[#ecf0f3]" />
+                Technical SEO
+              </p>
+              <p className="text-gray-400 flex items-center py-1 gap-2">
+                <FaCircleCheck className="text-[#ecf0f3]" />
+                On-Page Optimization
+              </p>
+              <p className="text-gray-400 flex items-center py-1 gap-2">
+                <FaCircleCheck className="text-[#ecf0f3]"/>
+                Links Optimization
+              </p>
+            </div>
+          </div>
+
           <Link href="/#projects" className="p-2">
             <p className="py-2 text-white underline cursor-pointer">
               Check out some of my latest projects.

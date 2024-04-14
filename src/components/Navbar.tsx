@@ -22,7 +22,7 @@ const Navbar = () => {
           <li className="2xl:text-lg">
             <Link href="/#projects">Projects</Link>
           </li>
-          <li className="2xl:text-lg">Skills</li>
+          <li className="2xl:text-lg">Contact</li>
         </ul>
         <div className="flex gap-4">
           <button className="hidden md:block py-3 px-5">Resume</button>
@@ -94,8 +94,10 @@ const Navbar = () => {
                   open: { opacity: 1, y: 0 },
                   closed: { opacity: 0, y: "25%" },
                 }}
+                className="py-6"
               >
                 <ul>
+                <li className="py-4 text-4xl font-bold text-white">Home</li>
                   <li className="py-4 text-4xl font-bold text-white">About</li>
                   <li className="py-4 text-4xl font-bold text-white">
                     Projects
@@ -126,19 +128,19 @@ const Navbar = () => {
                 className="list-none flex justify-center"
               >
                 <div className="flex items-center justify-between max-w-[330px] m-auto py-4 gap-x-4">
-                  <div className="bg-[#ecf0f3] rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                  <div className="bg-[#ecf0f3] rounded-full  p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                     <FaLinkedinIn />
                   </div>
-                  <div className="bg-[#ecf0f3] rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                  <div className="bg-[#ecf0f3] rounded-full  p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                     <FaGithub />
                   </div>
                   <Link href="/#contact">
-                    <div className="bg-[#ecf0f3] rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <div className="bg-[#ecf0f3] rounded-full  p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <AiOutlineMail />
                     </div>
                   </Link>
                   <Link href="/resume">
-                    <div className="bg-[#ecf0f3] rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <div className="bg-[#ecf0f3] rounded-full  p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <BsFillPersonLinesFill />
                     </div>
                   </Link>

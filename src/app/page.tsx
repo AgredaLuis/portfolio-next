@@ -1,4 +1,6 @@
 import About from "@/components/About";
+import Contact from "@/components/Contact";
+import ContactCta from "@/components/ContactCta";
 import Main from "@/components/Main";
 
 import Projects from "@/components/Projects";
@@ -10,6 +12,7 @@ export default function Home() {
       <Main />
       <About />
       <Projects />
+      <ContactCta />
     </main>
   );
 }
