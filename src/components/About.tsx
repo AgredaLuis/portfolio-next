@@ -1,11 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { FaCircleCheck } from "react-icons/fa6";
 
 const About = () => {
   return (
-    <div id="about" className="w-full px-4 flex items-center py-16 md:px-4">
+    <div id="about" className="w-full px-4 flex items-center py-16 md:px-4 bg-[#ecf0f3]">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-6 bg-black p-8 rounded-[3rem]">
         <div className="col-span-2 ">
           <p className="uppercase text-xl tracking-widest text-[#5651e5]">
@@ -25,7 +24,7 @@ const About = () => {
             <div className="p-4">
               <h3 className="font-bold text-[#5651e5] pb-1">Web Development</h3>
               <p className="text-gray-400 flex items-center py-1 gap-2">
-                <FaCircleCheck className="text-[#ecf0f3]"/>
+                <FaCircleCheck className="text-[#ecf0f3]" />
                 Scalability
               </p>
               <p className="text-gray-400 flex items-center py-1 gap-2">
@@ -63,17 +62,11 @@ const About = () => {
                 On-Page Optimization
               </p>
               <p className="text-gray-400 flex items-center py-1 gap-2">
-                <FaCircleCheck className="text-[#ecf0f3]"/>
+                <FaCircleCheck className="text-[#ecf0f3]" />
                 Links Optimization
               </p>
             </div>
           </div>
-
-          <Link href="/#projects" className="p-2">
-            <p className="py-2 text-white underline cursor-pointer">
-              Check out some of my latest projects.
-            </p>
-          </Link>
         </div>
         <div className="w-full h-auto m-auto shadow-xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <Image

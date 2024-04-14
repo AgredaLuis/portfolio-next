@@ -1,20 +1,18 @@
 "use client";
 import { motion, useCycle, AnimatePresence, MotionConfig } from "framer-motion";
 import Link from "next/link";
-import { useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Navbar = () => {
   const [mobileNav, toggleOpen] = useCycle(false, true);
-  const [navOpen, setNavOpen] = useState(false);
 
   return (
     <nav className="fixed w-full z-10 flex justify-center pt-7 md:pt-[25px] xl:pt-4 2xl:pt-[24px] bg-transparent">
       <div className="w-[78%] z-20 bg-black h-20 2xl:h-[86px] rounded-full flex items-center justify-between py-3 md:py-3 xl:py-[16px] px-8 text-white">
         <div className="text-md sm:hidden">DA</div>
-        <div className="hidden sm:block 2xl:text-xl">Danadel</div>
+        <div className="hidden sm:block 2xl:text-xl"><Link href="/#home">Danadel</Link></div>
         <ul className="hidden md:flex gap-4">
           <li className="2xl:text-lg">
             <Link href="/#about">About</Link>
@@ -97,13 +95,13 @@ const Navbar = () => {
                 className="py-6"
               >
                 <ul>
-                <li className="py-4 text-4xl font-bold text-white">Home</li>
-                  <li className="py-4 text-4xl font-bold text-white">About</li>
+                <li className="py-4 text-4xl font-bold text-white"><Link href="/#home" onClick={() => toggleOpen()} >Home</Link></li>
+                  <li className="py-4 text-4xl font-bold text-white"><Link href="/#about" onClick={() => toggleOpen()}>About</Link></li>
                   <li className="py-4 text-4xl font-bold text-white">
-                    Projects
+                  <Link href="/#projects" onClick={() => toggleOpen()}>Projects</Link>
                   </li>
                   <li className="py-4 text-4xl font-bold text-white">
-                    Contact
+                  <Link href="/#about" onClick={() => toggleOpen()}>Contact</Link>
                   </li>
                 </ul>
               </motion.div>

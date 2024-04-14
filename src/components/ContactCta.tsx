@@ -3,9 +3,9 @@ const ContactCta = () => {
   return (
     <div
       about="contact"
-      className="w-full h-full py-16 bg-black text-white flex items-center justify-center rounded-b-[70px]"
+      className="w-full h-[100vh] py-16 bg-black text-white flex items-center justify-center rounded-b-[70px]"
     >
-      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 bg-black p-8 md:border-4 md:boder-white rounded-[3rem]">
+      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 bg-black  p-8  md:border-4 md:boder-white rounded-[3rem]">
         {/* left */}
         <div className="w-full h-full rounded-xl col-span-1">
           <div className=" h-full w-full ">
@@ -21,12 +21,12 @@ const ContactCta = () => {
 
         {/* right */}
         <div className="h-auto col-span-2 rounded-xl lg:p-4">
-          <div className="h-full flex flex-col justify-center items-start p-4 gap-10">
-            <p className="uppercase text-xl tracking-widest text-[#5651e5] font-extrabold">
-              Let&apos;s chat
-            </p>
+          <div className="h-full flex flex-col justify-center items-start p-4 gap-14">
             <div>
-              <h2 className="py-4 px-2 text-white text-4xl">
+              <p className="uppercase text-xl py-4 tracking-widest text-[#5651e5] font-extrabold">
+                Let&apos;s chat
+              </p>
+              <h2 className="py-2 md:py-4 px-2 text-white text-4xl">
                 Let&apos;s schedule a your product tour
               </h2>
               <p className="py-2 px-2 text-white ">

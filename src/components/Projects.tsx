@@ -12,7 +12,7 @@ const Projects = () => {
         <p className="text-xl m-auto tracking-widest uppercase text-[#5651e5]">
           Projects
         </p>
-        <h2 className="py-6 px-1">Selected Work&apos;s</h2>
+        <h2 className="py-4 md:mx-2 text-4xl">Selected Work&apos;s</h2>
         <div className="grid md:grid-cols-2 gap-10">
           <ProjectItem
             title="Gericht Restaurant"
