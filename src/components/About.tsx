@@ -10,7 +10,7 @@ const About = () => {
           <p className="uppercase text-xl tracking-widest text-[#5651e5]">
             About
           </p>
-          <h2 className="py-4 text-white">What I Do</h2>
+          <h2 className="py-4 px-1 text-white">What I Do</h2>
           <p className="py-2 text-white ">
             I specialize in building (and occasionally designing) mobile
             responsive front-end UI applications that connect with API’s and
@@ -20,7 +20,7 @@ const About = () => {
             visibility in search rankings
           </p>
           <div className="m-4 h-px bg-white"></div>
-          <h2 className="py-4 text-white">Who I am</h2>
+          <h2 className="py-4 px-1 text-white">Who I am</h2>
           <p className="py-2 text-white">
             I’m passionate about learning new technologies and understand there
             is more than one way to accomplish a task. Though I am most

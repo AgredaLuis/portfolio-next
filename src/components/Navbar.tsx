@@ -11,18 +11,18 @@ const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full z-10 flex justify-center pt-7 md:pt-[25px] xl:pt-4 bg-transparen">
-      <div className="w-[78%] z-20 bg-black h-30 rounded-full flex items-center justify-between py-3 md:py-3 xl:py-[16px] px-8 text-white">
+    <nav className="fixed w-full z-10 flex justify-center pt-7 md:pt-[25px] xl:pt-4 2xl:pt-[24px] bg-transparent">
+      <div className="w-[78%] z-20 bg-black h-20 2xl:h-[86px] rounded-full flex items-center justify-between py-3 md:py-3 xl:py-[16px] px-8 text-white">
         <div className="text-md sm:hidden">DA</div>
-        <div className="hidden sm:block">Danadel</div>
+        <div className="hidden sm:block 2xl:text-xl">Danadel</div>
         <ul className="hidden md:flex gap-4">
-          <li>
+          <li className="2xl:text-lg">
             <Link href="/#about">About</Link>
           </li>
-          <li>
+          <li className="2xl:text-lg">
             <Link href="/#projects">Projects</Link>
           </li>
-          <li>Skills</li>
+          <li className="2xl:text-lg">Skills</li>
         </ul>
         <div className="flex gap-4">
           <button className="hidden md:block py-3 px-5">Resume</button>

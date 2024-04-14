@@ -1,17 +1,19 @@
-
 import React from "react";
 
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
   return (
-    <div id="projects" className="w-full py-4 bg-black rounded-t-[30px] text-white">
-      <div className="max-w-[1240px] mx-auto px-2 py-16">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
+    <div
+      id="projects"
+      className="w-full py-4 bg-black rounded-t-[30px] text-white flex items-center justify-center"
+    >
+      <div className="max-w-[1240px] px-8 py-16">
+        <p className="text-xl m-auto tracking-widest uppercase text-[#5651e5]">
           Projects
         </p>
-        <h2 className="py-6 ">Selected Work&apos;s</h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <h2 className="py-6 px-1">Selected Work&apos;s</h2>
+        <div className="grid md:grid-cols-2 gap-10">
           <ProjectItem
             title="Gericht Restaurant"
             backgroundImg="/restaurante.png"
