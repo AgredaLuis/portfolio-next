@@ -11,7 +11,7 @@ const About = () => {
             About
           </p>
           <h2 className="py-4 md:mx-2 text-white text-4xl">What I Do</h2>
-          <p className="py-2 w-[90%] text-white text-justify">
+          <p className="py-2 w-[90%] text-white mx-auto text-justify">
             I specialize in building (and occasionally designing) mobile
             responsive front-end UI applications that connect with API’s and
             other backend technologies. I create custom-coded websites that are
