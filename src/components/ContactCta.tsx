@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 const ContactCta = () => {
   return (
     <div
@@ -35,7 +36,7 @@ const ContactCta = () => {
               </p>
             </div>
             <div className="px-2">
-              <button className="py-5 px-12 text-lg">Contact</button>
+              <Link href="/contact"><button className="py-5 px-12 text-lg">Contact</button></Link>
             </div>
           </div>
         </div>

@@ -7,8 +7,8 @@ import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 const Contact = () => {
   return (
-    <div className="w-full h-full">
-      <div className="max-w-[1240px] m-auto px-2 py-16 w-full ">
+    <div className="w-full h-full py-20">
+      <div className="max-w-[1240px] m-auto px-2 py-16 w-full bg-[#ecf0f3] ">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Contact
         </p>
@@ -20,22 +20,21 @@ const Contact = () => {
               <div>
                 <Image
                   className="rounded-xl hover:scale-105 ease-in duration-300"
-                  src="/contact.jpg"
+                  src="/codeLaptop.jpg"
                   alt="/"
                   width={500}
                   height={500}
                 />
               </div>
               <div>
-                <h2 className="py-2">Clint Briley</h2>
+                <h2 className="py-2">Luis Agreda</h2>
                 <p>Front-End Developer</p>
                 <p className="py-4">
-                  I am available for freelance or full-time positions. Contact
-                  me and let&apos;s talk.
+                  I am available for freelance or full-time positions.
                 </p>
               </div>
               <div>
-                <p className="uppercase pt-8">Connect With Me</p>
+                <p className="uppercase pt-8">let&apos;s talk</p>
                 <div className="flex items-center justify-between py-4">
                   <Link
                     href="https://www.linkedin.com/in/clint-briley-50056920a/"

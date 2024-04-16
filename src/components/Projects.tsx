@@ -1,6 +1,7 @@
 import React from "react";
 
 import ProjectItem from "./ProjectItem";
+import { projectsUrls } from "@/libs";
 
 const Projects = () => {
   return (
@@ -14,31 +15,16 @@ const Projects = () => {
         </p>
         <h2 className="py-4 md:mx-2 text-4xl">Selected Work&apos;s</h2>
         <div className="grid md:grid-cols-2 gap-10">
-          <ProjectItem
-            title="Gericht Restaurant"
-            backgroundImg="/restaurante.png"
-            projectUrl="/restaurant"
-            tech="React JS"
-          />
-          <ProjectItem
-            title="OneWayTravel"
-            backgroundImg="/oneWayTravel.png"
-            backgroundVideo="/oneWayTravelVideo.mp4"
-            projectUrl="/OneWayTravel"
-            tech="Next Js"
-          />
-          <ProjectItem
-            title="Meals App"
-            backgroundImg="/mealsApp.png"
-            projectUrl="/SocialMedia"
-            tech="React JS"
-          />
-          {/*
-          <ProjectItem
-            title='Twitch UI'
-            backgroundImg=""
-            projectUrl='/twitch'
-            tech='Next JS' />*/}
+          {projectsUrls.map((project) => (
+            <ProjectItem
+              key={project.title}
+              title={project.title}
+              backgroundImg={project.backgroundImg}
+              backgroundVideo={project.backgroundVideo}
+              projectUrl={project.url}
+              tech={project.tech}
+            />
+          ))}
         </div>
       </div>
     </div>
