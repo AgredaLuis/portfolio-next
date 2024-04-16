@@ -7,8 +7,8 @@ export const onewaytravel: Project = {
     on Vercel and is fully responsive. A few features to note with this project are lazy loading images using
     the Image component, built in routing. `,
   framework: "Next JS",
-  video: "/oneWayTravelVideo.mp4",
   image: "/oneWayTravel.png",
+  video: "/oneWayTravelVideo.mp4",
   url: "https://one-way.info/",
   technologies: [
     "Next JS",
@@ -20,7 +20,7 @@ export const onewaytravel: Project = {
   ],
 };
 
-export const Gericht = {
+export const Gericht: Project = {
   name: "Gericht",
   description: `Restaurant website. This project is built with React JS, Sass, Javascript and Vite. The application is hosted on Github pages,built using a wireframe made in figma.`,
   framework: "React JS",
@@ -30,7 +30,7 @@ export const Gericht = {
   technologies: ["React JS", "Sass", "Javascript", "Vite"],
 };
 
-export const Mealsapp = {
+export const Mealsapp: Project = {
   name: "mealsApp",
   description: `I built this app to demonstrate knowledge working in React JS and
   accessing API endpoints. This app was built using React JS and is
