@@ -26,6 +26,6 @@
     @apply cursor-pointer
   }
   button{
-    @apply rounded-full uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] py-2 px-3 text-white text-xs font-semibold
+    @apply rounded-full uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] py-2 px-3 text-white text-xs font-semibold duration-300 hover:scale-110
   }
 }

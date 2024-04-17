@@ -1,3 +1,4 @@
+import { ProfilesLinks, Urls } from "@/libs";
 import Link from "next/link";
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
@@ -20,12 +21,12 @@ const Main = () => {
             integrating back-end technologies.
           </h3>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-            <Link href="www.linkedin.com/in/luisagreda">
+            <Link href={ProfilesLinks.linkedin} rel="noreferrer" target="_blank">
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaLinkedinIn />
               </div>
             </Link>
-            <Link href="https://github.com/AgredaLuis">
+            <Link href="https://github.com/AgredaLuis" rel="noreferrer" target="_blank">
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaGithub />
               </div>
@@ -35,7 +36,7 @@ const Main = () => {
                 <AiOutlineMail />
               </div>
             </Link>
-            <Link href="/resume">
+            <Link href={Urls.Resume}>
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <BsFillPersonLinesFill />
               </div>

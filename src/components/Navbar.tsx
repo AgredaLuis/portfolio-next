@@ -5,6 +5,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { ProfilesLinks, Urls } from "@/libs";
+import AnimatedLink from "@/animations/WordsAmation/AnimatedWord";
 
 const Navbar = () => {
   const [mobileNav, toggleOpen] = useCycle(false, true);
@@ -18,19 +19,27 @@ const Navbar = () => {
         </div>
         <ul className="hidden md:flex gap-4">
           <li className="2xl:text-lg">
-            <Link href="/#about">About</Link>
+            <Link href={Urls.About}>
+                <AnimatedLink title="About" />
+            </Link>
           </li>
           <li className="2xl:text-lg">
-            <Link href="/#projects">Projects</Link>
+            <Link href="/#projects" className="hover:underline">
+                <AnimatedLink title="Projects" />
+            </Link>
           </li>
           <li className="2xl:text-lg">
-            <Link href={Urls.Contact}>Contact</Link>
+            <Link href={Urls.Contact} className="hover:underline">
+              <AnimatedLink title="Contact" />
+            </Link>
           </li>
         </ul>
         <div className="flex gap-4">
-          <button className="hidden md:block py-3 px-5">Resume</button>
+          <Link href={Urls.Resume}>
+            <button className="hidden md:block py-3 px-5"><AnimatedLink title="Resume" /></button>
+          </Link>
           <Link href={Urls.Contact}>
-            <button className="py-3 px-5">Contact</button>
+            <button className="py-3 px-5"><AnimatedLink title="Contact" /></button>
           </Link>
         </div>
 
@@ -124,6 +133,8 @@ const Navbar = () => {
                   </li>
                 </ul>
               </motion.div>
+
+              
               <motion.div
                 variants={{
                   open: { opacity: 1, y: 0 },
@@ -142,7 +153,7 @@ const Navbar = () => {
                     opacity: 1,
                   },
                 }}
-                className="list-none flex justify-center"
+                className="list-none flex justify-center items-end"
               >
                 <div className="flex items-center justify-between max-w-[330px] m-auto py-4 gap-x-4">
                   <Link
@@ -168,7 +179,7 @@ const Navbar = () => {
                       <AiOutlineMail />
                     </div>
                   </Link>
-                  <Link href="/resume">
+                  <Link href={Urls.Resume}>
                     <div className="bg-[#ecf0f3] rounded-full  p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <BsFillPersonLinesFill />
                     </div>

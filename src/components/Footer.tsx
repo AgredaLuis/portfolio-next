@@ -4,7 +4,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import { Gericht, Mealsapp, onewaytravel } from "@/libs/data/projects";
-import { ProfilesLinks } from "@/libs";
+import { ProfilesLinks, Urls } from "@/libs";
 
 export const Footer = () => {
   return (
@@ -15,7 +15,11 @@ export const Footer = () => {
           <p className="pb-4 text-gray-600">Front-End Developer</p>
 
           <div className="flex justify-between max-w-[330px] pb-10 md:py-4 gap-x-4">
-            <Link href={ProfilesLinks.linkedin} rel="noreferrer" target="_blank">
+            <Link
+              href={ProfilesLinks.linkedin}
+              rel="noreferrer"
+              target="_blank"
+            >
               <div className="bg-[#ecf0f3] rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaLinkedinIn />
               </div>
@@ -26,7 +30,7 @@ export const Footer = () => {
               </div>
             </Link>
 
-            <Link href="/#contact">
+            <Link href={Urls.Contact}>
               <div className="bg-[#ecf0f3] rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <AiOutlineMail />
               </div>
@@ -73,17 +77,32 @@ export const Footer = () => {
             </h2>
             <ul className="text-gray-600 dark:text-gray-400">
               <li className="mb-4">
-                <a href={onewaytravel.url} className="hover:underline ">
+                <a
+                  href={onewaytravel.url}
+                  className="hover:underline "
+                  rel="noreferrer"
+                  target="_blank"
+                >
                   OneWayTravel
                 </a>
               </li>
               <li className="mb-4">
-                <a href={Mealsapp.url} className="hover:underline">
+                <a
+                  href={Mealsapp.url}
+                  className="hover:underline"
+                  rel="noreferrer"
+                  target="_blank"
+                >
                   Meals App
                 </a>
               </li>
               <li className="mb-4">
-                <a href={Gericht.url} className="hover:underline">
+                <a
+                  href={Gericht.url}
+                  className="hover:underline"
+                  rel="noreferrer"
+                  target="_blank"
+                >
                   Gericht Restaurant
                 </a>
               </li>
@@ -98,6 +117,8 @@ export const Footer = () => {
                 <a
                   href="https://www.frontendmentor.io/profile/AgredaLuis"
                   className="hover:underline"
+                  rel="noreferrer"
+                  target="_blank"
                 >
                   Frontend Mentor
                 </a>
@@ -106,6 +127,8 @@ export const Footer = () => {
                 <a
                   href="https://www.freecodecamp.org/AgredaLuis"
                   className="hover:underline"
+                  rel="noreferrer"
+                  target="_blank"
                 >
                   FreeCodeCamp
                 </a>

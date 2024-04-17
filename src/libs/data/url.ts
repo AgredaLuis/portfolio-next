@@ -1,11 +1,11 @@
-import { title } from "process"
+
 
 export const Urls ={
     Home: "/",
-    About: "/about",
+    About: "/#about",
     Contact: "/contact",
-    Projects: "/projects",
-    Resume: "/resume",
+    Projects: "#projects",
+    Resume: "/LuisAgreda-FrontendCV-EN.pdf",
 }
 
 export const ProfilesLinks = {

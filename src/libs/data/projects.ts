@@ -35,7 +35,7 @@ export const Mealsapp: Project = {
   description: `I built this app to demonstrate knowledge working in React JS and
   accessing API endpoints. This app was built using React JS and is
   hosted on Github pages. Another feature of this
-  application is dynamic routing through the &quot;React Router DOM&quot;
+  application is dynamic routing through the 'React Router DOM'
   package. This application was built using the TheMealsDB API.`,
   framework: "React JS",
   image: "/mealsApp.png",

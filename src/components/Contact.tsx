@@ -1,3 +1,4 @@
+import AnimatedLink from "@/animations/WordsAmation/AnimatedWord";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
@@ -30,7 +31,7 @@ const Contact = () => {
                 <h2 className="py-2">Luis Agreda</h2>
                 <p>Front-End Developer</p>
                 <p className="py-4">
-                  I am available for freelance or full-time positions.
+                  I am available for freelance or part-time positions.
                 </p>
               </div>
               <div>
@@ -96,8 +97,8 @@ const Contact = () => {
                     name="message"
                   ></textarea>
                 </div>
-                <button className="w-full p-4 text-gray-100 mt-4">
-                  Send Message
+                <button className="w-full p-4 text-gray-100 mt-4 flex justify-center items-center">
+                <AnimatedLink title={"Send Message"} />
                 </button>
               </form>
             </div>
