@@ -10,12 +10,12 @@ export const SVGAnimation = {
   },
 };
 
-export const letterAnimation = {
+export const SVGsAnimation = {
   rest: {
     x: 0,
   },
   hover: {
-    x: -30,
+    x: -40,
     transition: {
       duration: 0.3,
       ease: [0.6, 0.01, 0.05, 0.95],
@@ -24,9 +24,9 @@ export const letterAnimation = {
   },
 };
 
-export const letterAnimationTwo = {
+export const SVGAnimationTwo = {
   rest: {
-    x: 30,
+    x: 40,
   },
   hover: {
     x: 0,

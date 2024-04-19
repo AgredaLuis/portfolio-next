@@ -32,7 +32,7 @@ const ProjectItem = ({
           <Image
             className="rounded-xl group-hover:opacity-10 object-cover"
             src={backgroundImg}
-            alt="OneWayTravel agency image"
+            alt="Project photo of one of our projects"
             width={600}
             height={600}
           />
@@ -43,7 +43,7 @@ const ProjectItem = ({
           </h3>
           <p className="pb-4 pt-2 text-white text-center">{tech}</p>
           <Link href={projectUrl}>
-            <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
+            <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer hover:scale-110 ease-in duration-300">
               More Info
             </p>
           </Link>

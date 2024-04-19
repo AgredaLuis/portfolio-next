@@ -1,6 +1,8 @@
+import ButtomsLink from "@/animations/Buttons/ButtomsLink";
 import AnimatedLink from "@/animations/WordsAmation/AnimatedWord";
 import Image from "next/image";
 import Link from "next/link";
+import { FaArrowLeftLong, FaArrowRight, FaArrowRightLong } from "react-icons/fa6";
 const ContactCta = () => {
   return (
     <div
@@ -36,9 +38,12 @@ const ContactCta = () => {
                 Let&apos;s talk.
               </p>
             </div>
-            <div className="mx-2 px-auto border-b-[1px]">
-              <Link href="/contact" >
-                <AnimatedLink title="Get In Touch" />
+            <div className="mx-2 px-auto">
+              <Link href="/contact">
+                <ButtomsLink
+                  title="Get in touch"
+                  chrildren={<FaArrowRightLong />}
+                />
               </Link>
             </div>
           </div>

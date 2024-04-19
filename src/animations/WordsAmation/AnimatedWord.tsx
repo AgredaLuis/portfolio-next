@@ -24,7 +24,7 @@ import { letterAnimation, letterAnimationTwo, titleAnimation } from "./motion";
   }
   
 
-const AnimatedLetter = ({ character, animation }: AnimatedLetterProps) => {
+export const AnimatedLetter = ({ character, animation }: AnimatedLetterProps) => {
   return (
     <motion.span
       variants={animation}
@@ -35,7 +35,7 @@ const AnimatedLetter = ({ character, animation }: AnimatedLetterProps) => {
   );
 };
 
-const AnimatedWord = ({ title, animation, isHovered }:AnimatedWordProps) => {
+export const AnimatedWord = ({ title, animation, isHovered }:AnimatedWordProps) => {
   return (
     <motion.span
       variants={titleAnimation}

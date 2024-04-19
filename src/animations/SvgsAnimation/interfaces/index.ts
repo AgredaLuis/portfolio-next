@@ -2,6 +2,7 @@ import { ReactElement } from "react";
 
 export interface Props {
     chrildren: ReactElement;
+    className?: string;
 }
 export interface AnimatedElementProps {
     chrildren: ReactElement;
