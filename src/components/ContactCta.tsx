@@ -7,7 +7,7 @@ const ContactCta = () => {
   return (
     <div
       about="contact"
-      className="w-full py-16 bg-black text-white flex items-center justify-center md:rounded-b-[70px]"
+      className=" w-full py-16 bg-black text-white flex items-center justify-center md:rounded-b-[70px]"
     >
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 bg-black p-8  md:border-4 md:boder-white rounded-[3rem]">
         {/* left */}

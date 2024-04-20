@@ -6,9 +6,13 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import { Gericht, Mealsapp, onewaytravel } from "@/libs/data/projects";
 import { ProfilesLinks, Urls } from "@/libs";
 
+interface Props {
+  className: string;
+}
+
 export const Footer = () => {
   return (
-    <footer className="bottom-0 left-0 mx-auto py-16 w-full max-w-screen-xl p-4">
+    <footer className="sticky -z-10 bottom-0 left-0 mx-auto py-16 w-full max-w-screen-xl p-4">
       <div className="md:flex md:justify-between">
         <div className="flex flex-col justify-start">
           <h2 className="mb-6 md:mb-0 text-gray-700 pb-2">Luis Agreda</h2>
