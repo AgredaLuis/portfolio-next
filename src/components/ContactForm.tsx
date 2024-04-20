@@ -28,6 +28,7 @@ const ContactForm = () => {
 
     const serviceId = process.env.NEXT_PUBLIC__SERVICE_ID ? process.env.NEXT_PUBLIC__SERVICE_ID.toString() : '';
     const templateId = process.env.NEXT_PUBLIC__TEMPLATE_ID ? process.env.NEXT_PUBLIC__TEMPLATE_ID.toString() : '';
+    const publicKey = process.env.NEXT_PUBLIC__PUBLIC_KEY ? process.env.NEXT_PUBLIC__PUBLIC_KEY.toString() : '';
     emailjs
       .send(
         serviceId,
@@ -38,7 +39,7 @@ const ContactForm = () => {
           subject: data.subject,
           reply_to: data.email_from, // Aquí debería ser 'subject', no 'email_from'
         },
-        process.env.NEXT_PUBLIC__PUBLIC_KEY
+        publicKey
       )
       .then((result) => {
         setIsSuccess(true);
