@@ -70,13 +70,13 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-auto m-auto shadow-xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+        <div className="w-full h-full m-auto shadow-xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <Image
-            src="/about.jpg"
-            className="rounded-xl"
-            alt="/"
-            width={500}
-            height={400}
+            src="/lighthouse.png"
+            className="rounded-xl h-full object-cover"
+            alt="/Lighthouse demostration of my portfolio"
+            width={700}
+            height={700}
           />
         </div>
       </div>
