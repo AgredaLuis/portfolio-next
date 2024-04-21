@@ -21,22 +21,22 @@ const Main = () => {
             integrating back-end technologies.
           </h3>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-            <Link href={ProfilesLinks.linkedin} rel="noreferrer" target="_blank">
+            <Link href={ProfilesLinks.linkedin} rel="noreferrer" target="_blank" aria-label="LinkedIn">
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaLinkedinIn />
               </div>
             </Link>
-            <Link href="https://github.com/AgredaLuis" rel="noreferrer" target="_blank">
+            <Link href="https://github.com/AgredaLuis" rel="noreferrer" target="_blank" aria-label="GitHub">
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaGithub />
               </div>
             </Link>
-            <Link href="/contact">
+            <Link href="/contact" aria-label="Email">
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <AiOutlineMail />
               </div>
             </Link>
-            <Link href={Urls.Resume}>
+            <Link href={Urls.Resume} rel="noreferrer" target="_blank" aria-label="Resume">
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <BsFillPersonLinesFill />
               </div>
