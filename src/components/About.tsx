@@ -72,7 +72,7 @@ const About = () => {
         </div>
         <div className="w-full h-full m-auto shadow-xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <Image
-            src="/lighthouse.png"
+            src="/Lighthouse.png"
             className="rounded-xl h-full object-cover"
             alt="/Lighthouse demostration of my portfolio"
             width={700}
