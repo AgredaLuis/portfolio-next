@@ -29,18 +29,33 @@ export const Footer = () => {
                 <FaLinkedinIn />
               </div>
             </Link>
-            <Link href={ProfilesLinks.Github} rel="noreferrer" target="_blank" aria-label="GitHub">
+            <Link
+              href={ProfilesLinks.Github}
+              rel="noreferrer"
+              target="_blank"
+              aria-label="GitHub"
+            >
               <div className="bg-[#ecf0f3] rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaGithub />
               </div>
             </Link>
 
-            <Link href={Urls.Contact} rel="noreferrer" target="_blank" aria-label="Email">
+            <Link
+              href={Urls.Contact}
+              rel="noreferrer"
+              target="_blank"
+              aria-label="Email"
+            >
               <div className="bg-[#ecf0f3] rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <AiOutlineMail />
               </div>
             </Link>
-            <Link href="/resume" rel="noreferrer" target="_blank" aria-label="Resume">
+            <Link
+              href="/resume"
+              rel="noreferrer"
+              target="_blank"
+              aria-label="Resume"
+            >
               <div className="bg-[#ecf0f3] rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <BsFillPersonLinesFill />
               </div>
@@ -55,22 +70,38 @@ export const Footer = () => {
             </h2>
             <ul className="text-gray-600 dark:text-gray-400">
               <li className="mb-4">
-                <Link href="/" className="hover:underline" aria-label="HomePage">
+                <Link
+                  href="/"
+                  className="hover:underline"
+                  aria-label="HomePage"
+                >
                   Home
                 </Link>
               </li>
               <li className="mb-4">
-                <Link href="#about" className="hover:underline" aria-label="Go to abaout section">
+                <Link
+                  href="#about"
+                  className="hover:underline"
+                  aria-label="Go to abaout section"
+                >
                   About
                 </Link>
               </li>
               <li className="mb-4">
-                <Link href="#projects" className="hover:underline" aria-label="Go to projects">
+                <Link
+                  href="#projects"
+                  className="hover:underline"
+                  aria-label="Go to projects"
+                >
                   Projects
                 </Link>
               </li>
               <li className="mb-4">
-                <Link href="/contact" className="hover:underline" aria-label="Go to contact">
+                <Link
+                  href="/contact"
+                  className="hover:underline"
+                  aria-label="Go to contact"
+                >
                   Contact
                 </Link>
               </li>
@@ -150,10 +181,7 @@ export const Footer = () => {
       <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
       <div className="sm:flex sm:items-center sm:justify-between">
         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-          © 2024{" "}
-            Luis Agreda™
-
-          . All Rights Reserved.
+          © 2024 Luis Agreda™ . All Rights Reserved.
         </span>
       </div>
     </footer>
