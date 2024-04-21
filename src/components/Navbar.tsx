@@ -36,16 +36,17 @@ const Navbar = () => {
         </ul>
         <div className="flex gap-4">
           <Link href={Urls.Resume}>
-            <button className="hidden md:block py-3 px-5"><AnimatedLink title="Resume" /></button>
+            <button aria-label="Open Resume" className="hidden md:block py-3 px-5"><AnimatedLink title="Resume" /></button>
           </Link>
           <Link href={Urls.Contact}>
-            <button className="py-3 px-5"><AnimatedLink title="Contact" /></button>
+            <button aria-label="Go to Contact" className="py-3 px-5"><AnimatedLink title="Contact" /></button>
           </Link>
         </div>
 
         <motion.button
           animate={mobileNav ? "open" : "closed"}
           className=" md:hidden flex flex-col space-y-1"
+          aria-label="Open Mobile Navigation"
           onClick={() => toggleOpen()}
         >
           <motion.span

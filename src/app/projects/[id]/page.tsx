@@ -53,11 +53,11 @@ const ProjectPage = () => {
           <h2>Overview</h2>
           <p>{ProjectName.description}</p>
           <a href={ProjectName.url} target="_blank" rel="noreferrer">
-            <button className="py-3 px-8 mt-4 mr-8 text-sm">Visit</button>
+            <button aria-label="Visit de page online" className="py-3 px-8 mt-4 mr-8 text-sm">Visit</button>
           </a>
           {ProjectName.code ? (
             <a href={ProjectName.code} target="_blank" rel="noreferrer">
-              <button className="px-8 py-3 mt-4 text-sm">Code</button>
+              <button aria-label="Go to code" className="px-8 py-3 mt-4 text-sm">Code</button>
             </a>
           ) : null}
         </div>
@@ -76,7 +76,7 @@ const ProjectPage = () => {
           </div>
         </div>
         <Link href="/#projects">
-          <button className=" px-8 py-3">
+          <button aria-label="Return to projects" className=" px-8 py-3">
             <FaArrowLeft size={20} />
           </button>
         </Link>

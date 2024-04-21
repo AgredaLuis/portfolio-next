@@ -11,7 +11,7 @@ export default function Home() {
       <Main />
       <About />
       <Projects />
-      <div className="relative z-20">
+      <div className="md:relative md:z-20">
         <ContactCta />
         <Footer />
       </div>

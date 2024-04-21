@@ -42,6 +42,7 @@ const Contact = () => {
                   <Link
                     href="https://www.linkedin.com/in/clint-briley-50056920a/"
                     target="_blank"
+                    aria-label="Go to LinkedIn"
                     rel="noreferrer"
                   >
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
@@ -51,6 +52,7 @@ const Contact = () => {
                   <Link
                     href="https://github.com/fireclint"
                     target="_blank"
+                    aria-label="Github"
                     rel="noreferrer"
                   >
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
@@ -61,7 +63,7 @@ const Contact = () => {
                   <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                     <AiOutlineMail />
                   </div>
-                  <Link href="/resume">
+                  <Link href="/resume" aria-label="Open resume">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <BsFillPersonLinesFill />
                     </div>

@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Luis Agreda | Front-End Developer",
-  description: "Freelance , Front-End Developer , Luis Agreda , portfolio",
+  description: "Freelance , Front-End Developer , Luis Agreda , portfolio, code, projects",
 };
 
 export default function RootLayout({

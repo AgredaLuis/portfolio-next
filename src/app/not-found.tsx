@@ -8,7 +8,7 @@ export default function NotFound() {
         <span>YOU GOT LOST :( </span>
       </div>
       <p className="px-2 pb-4">404 Error. The page you’re looking for does not exist.</p>
-      <Link href="/"><button className="py-3 px-5">Return Home</button></Link>
+      <Link href="/"><button aria-label="Return Home"  className="py-3 px-5">Return Home</button></Link>
     </div>
   );
 }

@@ -96,7 +96,9 @@ const ContactForm = () => {
           </div>
           <button
             type="submit"
+            id="submit"
             className="w-full p-4 text-gray-100 mt-4 flex justify-center items-center"
+            aria-label="Send email"
           >
             <AnimatedLink title={"Send Message"} />
           </button>

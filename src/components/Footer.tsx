@@ -12,7 +12,7 @@ interface Props {
 
 export const Footer = () => {
   return (
-    <footer className="sticky -z-10 bottom-0 left-0 mx-auto py-16 w-full max-w-screen-xl p-4">
+    <footer className="md:sticky md:-z-10 bottom-0 left-0 mx-auto py-16 w-full max-w-screen-xl p-4">
       <div className="md:flex md:justify-between">
         <div className="flex flex-col justify-start">
           <h2 className="mb-6 md:mb-0 text-gray-700 pb-2">Luis Agreda</h2>
@@ -23,23 +23,24 @@ export const Footer = () => {
               href={ProfilesLinks.linkedin}
               rel="noreferrer"
               target="_blank"
+              aria-label="LinkedIn"
             >
               <div className="bg-[#ecf0f3] rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaLinkedinIn />
               </div>
             </Link>
-            <Link href={ProfilesLinks.Github} rel="noreferrer" target="_blank">
+            <Link href={ProfilesLinks.Github} rel="noreferrer" target="_blank" aria-label="GitHub">
               <div className="bg-[#ecf0f3] rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaGithub />
               </div>
             </Link>
 
-            <Link href={Urls.Contact}>
+            <Link href={Urls.Contact} rel="noreferrer" target="_blank" aria-label="Email">
               <div className="bg-[#ecf0f3] rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <AiOutlineMail />
               </div>
             </Link>
-            <Link href="/resume">
+            <Link href="/resume" rel="noreferrer" target="_blank" aria-label="Resume">
               <div className="bg-[#ecf0f3] rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <BsFillPersonLinesFill />
               </div>
@@ -54,22 +55,22 @@ export const Footer = () => {
             </h2>
             <ul className="text-gray-600 dark:text-gray-400">
               <li className="mb-4">
-                <Link href="/" className="hover:underline">
+                <Link href="/" className="hover:underline" aria-label="HomePage">
                   Home
                 </Link>
               </li>
               <li className="mb-4">
-                <Link href="#about" className="hover:underline">
+                <Link href="#about" className="hover:underline" aria-label="Go to abaout section">
                   About
                 </Link>
               </li>
               <li className="mb-4">
-                <Link href="#projects" className="hover:underline">
+                <Link href="#projects" className="hover:underline" aria-label="Go to projects">
                   Projects
                 </Link>
               </li>
               <li className="mb-4">
-                <Link href="/contact" className="hover:underline">
+                <Link href="/contact" className="hover:underline" aria-label="Go to contact">
                   Contact
                 </Link>
               </li>
@@ -86,6 +87,7 @@ export const Footer = () => {
                   className="hover:underline "
                   rel="noreferrer"
                   target="_blank"
+                  aria-label="OneWayTravel website"
                 >
                   OneWayTravel
                 </a>
@@ -96,6 +98,7 @@ export const Footer = () => {
                   className="hover:underline"
                   rel="noreferrer"
                   target="_blank"
+                  aria-label="Meals App website"
                 >
                   Meals App
                 </a>
@@ -106,6 +109,7 @@ export const Footer = () => {
                   className="hover:underline"
                   rel="noreferrer"
                   target="_blank"
+                  aria-label="Gericht Restaurant website"
                 >
                   Gericht Restaurant
                 </a>
@@ -123,6 +127,7 @@ export const Footer = () => {
                   className="hover:underline"
                   rel="noreferrer"
                   target="_blank"
+                  aria-label="Frontend Mentor website"
                 >
                   Frontend Mentor
                 </a>
@@ -133,6 +138,7 @@ export const Footer = () => {
                   className="hover:underline"
                   rel="noreferrer"
                   target="_blank"
+                  aria-label="FreeCodeCamp website"
                 >
                   FreeCodeCamp
                 </a>
@@ -145,12 +151,10 @@ export const Footer = () => {
       <div className="sm:flex sm:items-center sm:justify-between">
         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
           © 2024{" "}
-          <a href="https://flowbite.com" className="hover:underline">
             Luis Agreda™
-          </a>
+
           . All Rights Reserved.
         </span>
-        <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0"></div>
       </div>
     </footer>
   );

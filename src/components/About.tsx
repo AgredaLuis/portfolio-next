@@ -4,7 +4,10 @@ import { FaCircleCheck } from "react-icons/fa6";
 
 const About = () => {
   return (
-    <div id="about" className="w-full px-4 flex items-center py-16 md:px-4 bg-[#ecf0f3]">
+    <div
+      id="about"
+      className="w-full px-4 flex items-center py-16 md:px-4 bg-[#ecf0f3]"
+    >
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-6 bg-black p-8 rounded-[3rem]">
         <div className="col-span-2 ">
           <p className="uppercase text-xl tracking-widest text-[#5651e5]">
@@ -12,12 +15,11 @@ const About = () => {
           </p>
           <h2 className="py-4 md:mx-2 text-white text-4xl">What I Do</h2>
           <p className="py-2 w-[90%] text-white mx-auto text-justify">
-            I specialize in building (and occasionally designing) mobile
-            responsive front-end UI applications that connect with API’s and
-            other backend technologies. I create custom-coded websites that are
-            tailored to your brand. I Focus on accessibility, performance, and
-            scalability, I also optimize your online presence to elevate your
-            visibility in search rankings
+            I specialize in building mobile responsive front-end UI applications
+            that connect with API’s and other backend technologies. I create
+            custom-coded websites that are tailored to your brand. I Focus on
+            accessibility, performance, and scalability, I also optimize your
+            online presence to elevate your visibility in search rankings
           </p>
           <div className="my-2 h-px w-[90%] bg-white"></div>
           <div className="flex flex-col md:flex-row w-[80%] md:items-center justify-between py-4 mx-auto">

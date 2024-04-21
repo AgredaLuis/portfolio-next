@@ -39,7 +39,7 @@ const ContactCta = () => {
               </p>
             </div>
             <div className="mx-2 px-auto">
-              <Link href="/contact">
+              <Link href="/contact" aria-label="Contact link">
                 <ButtomsLink
                   title="Get in touch"
                   chrildren={<FaArrowRightLong />}
