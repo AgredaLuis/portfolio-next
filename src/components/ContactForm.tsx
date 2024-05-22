@@ -59,10 +59,11 @@ const ContactForm = () => {
       <div className="p-4">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="flex flex-col py-2">
-            <label className="uppercase text-sm py-2">Email<span className="text-red-500 text-lg">*</span></label>
+            <label typeof="email" className="uppercase text-sm py-2">Email<span className="text-red-500 text-lg">*</span></label>
             <input
               className="border-2 rounded-lg p-3 flex border-gray-300"
               id="email_from"
+              type="email"
               placeholder="myEmail@gmail.com"
               {...register("email_from")}
             />
@@ -71,10 +72,11 @@ const ContactForm = () => {
             )}
           </div>
           <div className="flex flex-col py-2">
-            <label className="uppercase text-sm py-2">Subject<span className="text-red-500 text-lg">*</span></label>
+            <label typeof="subject" className="uppercase text-sm py-2">Subject<span className="text-red-500 text-lg">*</span></label>
             <input
               className="border-2 rounded-lg p-3 flex border-gray-300"
               type="text"
+              id="subject"
               placeholder="I want to work with you"
               {...register("subject")}
             />

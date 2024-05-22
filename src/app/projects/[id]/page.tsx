@@ -4,14 +4,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound, useParams } from "next/navigation";
 import { getProjects } from "@/libs/data/projects";
-import { Project } from "@/types/project";
 
 const ProjectPage = () => {
   const params = useParams();
 
   const ProjectName  = getProjects((params.id as string).toLocaleLowerCase());
 
-  console.log(ProjectName)
 
   if (!ProjectName) {
     notFound();

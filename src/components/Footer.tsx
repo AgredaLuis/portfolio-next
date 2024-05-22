@@ -3,12 +3,9 @@ import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
-import { Gericht, Mealsapp, onewaytravel } from "@/libs/data/projects";
+import { Gericht, ImageCompress, onewaytravel } from "@/libs/data/projects";
 import { ProfilesLinks, Urls } from "@/libs";
 
-interface Props {
-  className: string;
-}
 
 export const Footer = () => {
   return (
@@ -125,13 +122,13 @@ export const Footer = () => {
               </li>
               <li className="mb-4">
                 <a
-                  href={Mealsapp.url}
+                  href={ImageCompress.url}
                   className="hover:underline"
                   rel="noreferrer"
                   target="_blank"
                   aria-label="Meals App website"
                 >
-                  Meals App
+                  ImageCompress
                 </a>
               </li>
               <li className="mb-4">

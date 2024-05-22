@@ -18,15 +18,15 @@ const ProjectItem = ({
   projectUrl,
 }: Props) => {
   return (
-    <div className=" flex items-center justify-center h-auto w-full xshadow-xl xshadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]">
-      <div className="relative">
+    <div className=" flex items-center justify-center h-auto w-full rounded-xl group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]">
+      <div className="relative h-full w-full">
         {backgroundVideo ? (
           <video
             src={backgroundVideo}
             autoPlay
             loop
             muted
-            className="rounded-xl group-hover:opacity-10 object-cover"
+            className="w-full h-full rounded-xl group-hover:opacity-10 object-cover"
           />
         ) : (
           <Image
