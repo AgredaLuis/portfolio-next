@@ -1,8 +1,7 @@
 import ButtomsLink from "@/animations/Buttons/ButtomsLink";
-import AnimatedLink from "@/animations/WordsAmation/AnimatedWord";
 import Image from "next/image";
 import Link from "next/link";
-import { FaArrowLeftLong, FaArrowRight, FaArrowRightLong } from "react-icons/fa6";
+import {  FaArrowRightLong } from "react-icons/fa6";
 const ContactCta = () => {
   return (
     <div

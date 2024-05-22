@@ -22,6 +22,9 @@ const ProjectItem = ({
       <div className="relative h-full w-full">
         {backgroundVideo ? (
           <video
+            lang="en"
+            
+            preload="auto"
             src={backgroundVideo}
             autoPlay
             loop

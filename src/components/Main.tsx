@@ -7,10 +7,10 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Main = () => {
   return (
-    <div id="home" className="w-full h-screen text-center bg-[#ecf0f3]">
+    <div id="home" className="w-full h-screen text-center bg-[#ecf0f3] animate-slide">
       <div className="max-w-[1240px] w-full h-full mx-auto p-4 flex justify-center items-center">
         <div className="">
-          <h1 className="py-4 text-gray-700 text-5xl font-extrabold">
+          <h1 className="py-4 text-gray-700 text-5xl font-extrabold ">
             Hi, I&#39;m <span className="text-[#5651e5]">Luis Agreda</span>
           </h1>
           <h2 className="py-2 text-gray-700 text-4xl font-extrabold">

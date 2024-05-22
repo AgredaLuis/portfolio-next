@@ -5,6 +5,7 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { contactSchema } from "@/validations/contactSchema";
+import toast, { Toaster } from "react-hot-toast";
 
 type Inputs = {
   email_from: string;
@@ -13,7 +14,7 @@ type Inputs = {
 };
 const ContactForm = () => {
 
-    const [isSuccess, setIsSuccess] = useState(false);
+    const [isSuccess, setIsSuccess] = useState<boolean>(false);
   const {
     register,
     handleSubmit,
@@ -43,13 +44,15 @@ const ContactForm = () => {
       )
       .then((result) => {
         setIsSuccess(true);
+        toast.success("Message sent successfully!", {
+          
+        })
           // Limpiar los campos del formulario
           reset(); 
         
       })
       .catch((error) => {
-        console.log(error);
-
+        toast.error("Message not sent!")
         reset();
       });
   };
@@ -96,6 +99,7 @@ const ContactForm = () => {
               <p className="text-red-500">{errors.message.message}</p>
             )}
           </div>
+          {isSuccess && <p className="text-white text-center bg-green-500 rounded-md">Your message has been sent!</p>}
           <button
             type="submit"
             id="submit"
@@ -106,9 +110,9 @@ const ContactForm = () => {
           </button>
         </form>
 
-        {isSuccess && <p className="text-green-500">Your message has been sent</p>}
 
       </div>
+      <Toaster position="bottom-right"/>
     </div>
   );
 };
