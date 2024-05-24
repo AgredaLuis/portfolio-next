@@ -5,10 +5,10 @@ import Image from "next/image";
 import { notFound, useParams } from "next/navigation";
 import { getProjects } from "@/libs/data/projects";
 
-const ProjectPage = () => {
+const ProjectPage =  () => {
   const params = useParams();
 
-  const ProjectName  = getProjects((params.id as string).toLocaleLowerCase());
+  const ProjectName  =  getProjects((params.id as string).toLocaleLowerCase());
 
 
   if (!ProjectName) {
@@ -50,11 +50,11 @@ const ProjectPage = () => {
           <p className="uppercase text-[#5651e5]">Project</p>
           <h2>Overview</h2>
           <p>{ProjectName.description}</p>
-          <a href={ProjectName.url} target="_blank" rel="noreferrer">
+          <a href={ProjectName.url} target="_blank" rel="noreferrer" aria-label="Visit de page online">
             <button aria-label="Visit de page online" className="py-3 px-8 mt-4 mr-8 text-sm">Visit</button>
           </a>
           {ProjectName.code ? (
-            <a href={ProjectName.code} target="_blank" rel="noreferrer">
+            <a href={ProjectName.code} target="_blank" rel="noreferrer" aria-label="Go to code in Github">
               <button aria-label="Go to code" className="px-8 py-3 mt-4 text-sm">Code</button>
             </a>
           ) : null}
@@ -73,7 +73,7 @@ const ProjectPage = () => {
             </div>
           </div>
         </div>
-        <Link href="/#projects">
+        <Link href="/#projects" aria-label="Return to projects Page">
           <button aria-label="Return to projects" className=" px-8 py-3">
             <FaArrowLeft size={20} />
           </button>
