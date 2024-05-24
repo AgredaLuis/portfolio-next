@@ -35,13 +35,14 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="flex gap-4">
-          <a href={Urls.Resume} rel="noreferrer" target="_blank"  about="Open Resume my resume" aria-label="Open Resume">
+          <a href={Urls.Resume} rel="noreferrer"  target="_blank"  about="Open Resume my resume" aria-label="Open Resume">
             <button aria-label="Open Resume" className="hidden md:block py-3 px-5"><AnimatedLink title="Resume" /></button>
           </a>
           <Link href={Urls.Contact}>
             <button aria-label="Go to Contact" className="py-3 px-5"><AnimatedLink title="Contact" /></button>
           </Link>
         </div>
+        
 
         <motion.button
           animate={mobileNav ? "open" : "closed"}

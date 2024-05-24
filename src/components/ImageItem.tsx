@@ -25,8 +25,8 @@ export const ImageItem = ({ backgroundImg, backgroundVideo, arial }: Props) => {
           src={backgroundImg}
           alt="Project photo of one of our projects"
           loading="lazy"
-          width={600}
-          height={600}
+          width={300}
+          height={300}
         />
       )}
     </div>
