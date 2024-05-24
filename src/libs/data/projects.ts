@@ -37,7 +37,7 @@ export const ImageCompress: Project = {
   hosted on Vercel. This application was built using the Image conversion & optimization API.`,
   framework: "Next JS",
   image: "/imageCompress.png",
-  video: "/imageCompress.mp4",
+  /* video: "/imageCompress.mp4", */
   url: "https://imagecompress-eight.vercel.app/",
   code: "https://github.com/AgredaLuis/imagecompress",
   technologies: ["React JS", "Tailwind", "Typescript", "Vercel", "Toastify"],

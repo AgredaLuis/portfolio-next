@@ -14,20 +14,13 @@ export const ProfilesLinks = {
 };
 
 export const projectsUrls = [
-  {
-    title: "OneWayTravel",
-    url: "/projects/oneWayTravel",
-    arial: "OneWayTravel information",
-    backgroundImg: "/oneWayTravel.png",
-    backgroundVideo: "/oneWayTravelVideo.mp4",
-    tech: "Next Js",
-  },
+  
   {
     title: "Compress Image",
     url: "/projects/imageCompress",
     arial: "Compress Image information",
     backgroundImg: "/imageCompress.png",
-    backgroundVideo: "/imageCompress.mp4",
+    /* backgroundVideo: "/imageCompress.mp4", */
     tech: "Next JS",
   },
   {
@@ -36,5 +29,13 @@ export const projectsUrls = [
     arial: "Gericht Restaurant information",
     backgroundImg: "/restaurante.png",
     tech: "React JS",
+  },
+  {
+    title: "OneWayTravel",
+    url: "/projects/oneWayTravel",
+    arial: "OneWayTravel information",
+    backgroundImg: "/oneWayTravel.png",
+    backgroundVideo: "/oneWayTravelVideo.mp4",
+    tech: "Next Js",
   },
 ];
