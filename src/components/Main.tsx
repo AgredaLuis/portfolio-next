@@ -19,10 +19,10 @@ const Main = () => {
           <h2 className="py-2 text-gray-700 text-4xl font-extrabold">
             A Front-End Web Developer
           </h2>
-          <h3 className="py-4 text-gray-600 sm:max-w-[70%] m-auto text-[18px] font-semibold">
+          <p className="py-4 text-gray-600 sm:max-w-[70%] m-auto text-[18px] font-semibold">
             I&apos;m focused on building responsive front-end web applications
             integrating back-end technologies.
-          </h3>
+          </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <Link
               href={ProfilesLinks.linkedin}
