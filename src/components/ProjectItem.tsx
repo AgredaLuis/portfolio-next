@@ -4,6 +4,7 @@ import React from "react";
 
 interface Props {
   title: string;
+  arial: string;
   backgroundImg: string;
   backgroundVideo?: string;
   tech: string;
@@ -12,6 +13,7 @@ interface Props {
 
 const ProjectItem = ({
   title,
+  arial,
   backgroundImg,
   tech,
   backgroundVideo,
@@ -23,7 +25,6 @@ const ProjectItem = ({
         {backgroundVideo ? (
           <video
             lang="en"
-            
             preload="auto"
             src={backgroundVideo}
             autoPlay
@@ -45,7 +46,7 @@ const ProjectItem = ({
             {title}
           </h3>
           <p className="pb-4 pt-2 text-white text-center">{tech}</p>
-          <Link href={projectUrl}>
+          <Link href={projectUrl} aria-label={arial}>
             <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer hover:scale-110 ease-in duration-300">
               More Info
             </p>

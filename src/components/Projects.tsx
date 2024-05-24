@@ -19,6 +19,7 @@ const Projects = () => {
             <ProjectItem
               key={project.title}
               title={project.title}
+              arial={project.arial}
               backgroundImg={project.backgroundImg}
               backgroundVideo={project.backgroundVideo}
               projectUrl={project.url}

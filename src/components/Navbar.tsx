@@ -35,7 +35,7 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="flex gap-4">
-          <Link href={Urls.Resume}>
+          <Link href={Urls.Resume} about="Open Resume my resume" aria-label="Open Resume">
             <button aria-label="Open Resume" className="hidden md:block py-3 px-5"><AnimatedLink title="Resume" /></button>
           </Link>
           <Link href={Urls.Contact}>
