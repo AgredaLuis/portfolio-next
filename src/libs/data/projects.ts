@@ -20,14 +20,14 @@ export const onewaytravel: Project = {
   ],
 };
 
-export const Gericht: Project = {
-  name: "Gericht",
-  description: `Restaurant website. This project is built with React JS, Sass, Javascript and Vite. The application is hosted on Github pages,built using a wireframe made in figma.`,
-  framework: "React JS",
-  image: "/restaurante.png",
-  url: "https://agredaluis.github.io/gerich-restaurant/",
+export const shonenShop: Project = {
+  name: "shonenShop",
+  description: `I built this app to demonstrate knowledge working in Next JS and accessing API endpoints. This app was built using Next JS and is hosted on Vercel.`,
+  framework: "Next JS",
+  image: "/shonenShop.png",
+  url: "https://shonen-shop.vercel.app/",
   code: "https://github.com/AgredaLuis/gerich-restaurant",
-  technologies: ["React JS", "Sass", "Javascript", "Vite"],
+  technologies: ["next JS", "Tailwind", "Typescript", "Prisma", "Zod"],
 };
 
 export const ImageCompress: Project = {
@@ -47,8 +47,8 @@ export function getProjects(id: string) {
   switch (id) {
     case onewaytravel.name.toLowerCase():
       return onewaytravel;
-    case Gericht.name.toLowerCase():
-      return Gericht;
+    case shonenShop.name.toLowerCase():
+      return shonenShop;
     case ImageCompress.name.toLowerCase():
       return ImageCompress;
     default:

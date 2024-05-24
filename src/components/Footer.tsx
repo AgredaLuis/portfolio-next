@@ -3,7 +3,7 @@ import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
-import { Gericht, ImageCompress, onewaytravel } from "@/libs/data/projects";
+import { ImageCompress, onewaytravel, shonenShop } from "@/libs/data/projects";
 import { ProfilesLinks, Urls } from "@/libs";
 
 
@@ -133,13 +133,13 @@ export const Footer = () => {
               </li>
               <li className="mb-4">
                 <a
-                  href={Gericht.url}
+                  href={shonenShop.url}
                   className="hover:underline"
                   rel="noreferrer"
                   target="_blank"
-                  aria-label="Gericht Restaurant website"
+                  aria-label="Shonen Shop website"
                 >
-                  Gericht Restaurant
+                  Shonen Shop
                 </a>
               </li>
             </ul>
