@@ -21,7 +21,7 @@ const Projects = () => {
               title={project.title}
               arial={project.arial}
               backgroundImg={project.backgroundImg}
-              backgroundVideo={project.backgroundVideo}
+              //backgroundVideo={project.backgroundVideo ?? ""}
               projectUrl={project.url}
               tech={project.tech}
             />
