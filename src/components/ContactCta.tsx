@@ -26,9 +26,9 @@ const ContactCta = () => {
         <div className="h-auto col-span-2 rounded-xl lg:p-4">
           <div className="h-full flex flex-col justify-center items-start p-4 gap-14">
             <div>
-              <p className="uppercase text-xl py-4 tracking-widest text-[#5651e5] font-extrabold">
+              <h3 className="uppercase text-xl py-4 tracking-widest text-[#9391ED] font-extrabold">
                 Let&apos;s chat
-              </p>
+              </h3>
               <h2 className="py-2 md:py-4 px-2 text-white text-4xl">
                 Let&apos;s schedule a your product tour
               </h2>

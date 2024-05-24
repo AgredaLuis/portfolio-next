@@ -20,7 +20,7 @@ const ButtomsLink = ({ chrildren, className, title }: Props) => {
     <motion.div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className={`flex justify-center items-center gap-6 ${className} `}
+      className={`flex items-center gap-5 ${className} `}
     >
       <div className="relative overflow-hidden cursor-pointer border-b-[1px] mb-[5px]">
         <AnimatedWord
@@ -38,7 +38,7 @@ const ButtomsLink = ({ chrildren, className, title }: Props) => {
       </div>
 
       <motion.div
-        className={`relative overflow-hidden cursor-pointer  bg-[#5651e5] 
+        className={`relative overflow-hidden cursor-pointer bg-[#5651e5] 
         rounded-full w-[55px] h-[55px] flex items-center justify-center ease-in 
         duration-75 ${
           isHovered

@@ -10,9 +10,9 @@ const Projects = () => {
       className="w-full py-4 bg-black md:rounded-t-[70px] text-white flex items-center justify-center"
     >
       <div className="max-w-[1240px] px-8 py-16">
-        <p className="text-xl m-auto tracking-widest uppercase text-[#5651e5]">
+        <h3 className="text-xl font-bold m-auto tracking-widest uppercase text-[#9391ED]">
           Projects
-        </p>
+        </h3>
         <h2 className="py-4 md:mx-2 text-4xl">Selected Work&apos;s</h2>
         <div className="grid md:grid-cols-2 gap-10">
           {projectsUrls.map((project) => (

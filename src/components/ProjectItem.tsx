@@ -26,6 +26,7 @@ const ProjectItem = ({
           <video
             lang="en"
             preload="auto"
+            aria-label={arial}
             src={backgroundVideo}
             autoPlay
             loop

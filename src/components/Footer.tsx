@@ -65,7 +65,7 @@ export const Footer = () => {
             <h2 className="mb-6 text-sm font-semibold text-gray-700 uppercase">
               Navigation
             </h2>
-            <ul className="text-gray-600 dark:text-gray-400">
+            <ul className="text-gray-700">
               <li className="mb-4">
                 <Link
                   href="/"
@@ -108,7 +108,7 @@ export const Footer = () => {
             <h2 className="mb-6 text-sm font-semibold text-gray-700 uppercase">
               Resources
             </h2>
-            <ul className="text-gray-600 dark:text-gray-400">
+            <ul className="text-gray-600">
               <li className="mb-4">
                 <a
                   href={onewaytravel.url}
@@ -148,7 +148,7 @@ export const Footer = () => {
             <h2 className="mb-6 text-sm font-semibold text-gray-700 uppercase">
               Profiles
             </h2>
-            <ul className="text-gray-600 dark:text-gray-400">
+            <ul className="text-gray-600">
               <li className="mb-4">
                 <a
                   href="https://www.frontendmentor.io/profile/AgredaLuis"
@@ -177,7 +177,7 @@ export const Footer = () => {
       </div>
       <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
       <div className="sm:flex sm:items-center sm:justify-between">
-        <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+        <span className="text-sm text-gray-600 sm:text-center">
           © 2024 Luis Agreda™ . All Rights Reserved.
         </span>
       </div>
