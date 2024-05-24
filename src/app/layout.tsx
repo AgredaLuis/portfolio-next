@@ -6,7 +6,16 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Luis Agreda | Front-End Developer",
-  description: "Freelance , Front-End Developer , Luis Agreda , portfolio, code, projects",
+  description:
+    "Explore my projects and skills as a frontend developer specialized in Next.js and Tailwind CSS. Connect with me for collaborations or opportunities.",
+  creator: "Luis Agreda",
+  openGraph: {
+    title: "Luis Agreda | Front-End Developer",
+    description:
+      "Explore my projects and skills as a frontend developer specialized in Next.js and Tailwind CSS. Connect with me for collaborations or opportunities.",
+    type: "website",
+    url: "https://luisagreda-portfolio.vercel.app/",
+  },
 };
 
 export default function RootLayout({
