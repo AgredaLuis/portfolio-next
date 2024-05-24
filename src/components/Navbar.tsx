@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full z-30 flex justify-center pt-7 md:pt-[25px] xl:pt-4 2xl:pt-[24px] bg-transparent animate-appear">
       <div className="w-[78%] z-20 bg-black h-20 2xl:h-[86px] rounded-full flex items-center justify-between py-3 md:py-3 xl:py-[16px] px-8 text-white">
-        <div className="text-md sm:hidden">LA</div>
+        <div className="text-md sm:hidden"><Link href={Urls.Home}>LA</Link></div>
         <div className="hidden sm:block 2xl:text-xl">
           <Link href={Urls.Home}>Luis Agreda</Link>
         </div>
@@ -35,9 +35,9 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="flex gap-4">
-          <Link href={Urls.Resume} about="Open Resume my resume" aria-label="Open Resume">
+          <a href={Urls.Resume} rel="noreferrer" target="_blank"  about="Open Resume my resume" aria-label="Open Resume">
             <button aria-label="Open Resume" className="hidden md:block py-3 px-5"><AnimatedLink title="Resume" /></button>
-          </Link>
+          </a>
           <Link href={Urls.Contact}>
             <button aria-label="Go to Contact" className="py-3 px-5"><AnimatedLink title="Contact" /></button>
           </Link>
