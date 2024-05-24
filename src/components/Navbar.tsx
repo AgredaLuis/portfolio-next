@@ -11,8 +11,8 @@ const Navbar = () => {
   const [mobileNav, toggleOpen] = useCycle(false, true);
 
   return (
-    <nav className="fixed w-full z-30 flex justify-center pt-7 md:pt-[25px] xl:pt-4 2xl:pt-[24px] bg-transparent animate-appear">
-      <div className="w-[78%] z-20 bg-black h-20 2xl:h-[86px] rounded-full flex items-center justify-between py-3 md:py-3 xl:py-[16px] px-8 text-white">
+    <nav className="fixed w-full z-30 flex justify-center pt-7 md:pt-[25px] xl:pt-4 2xl:pt-[24px] bg-transparent ">
+      <div className="w-[78%] z-20 bg-black h-20 2xl:h-[86px] rounded-full flex items-center justify-between py-3 md:py-3 xl:py-[16px] px-8 text-white animate-appear">
         <div className="text-md sm:hidden"><Link href={Urls.Home}>LA</Link></div>
         <div className="hidden sm:block 2xl:text-xl">
           <Link href={Urls.Home}>Luis Agreda</Link>
