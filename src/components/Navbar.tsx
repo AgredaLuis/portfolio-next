@@ -114,22 +114,22 @@ const Navbar = () => {
               >
                 <ul>
                   <li className="py-4 text-4xl font-bold text-white">
-                    <Link href="/#home" onClick={() => toggleOpen()}>
+                    <Link href="/#home" aria-label="Go to Home" onClick={() => toggleOpen()}>
                       Home
                     </Link>
                   </li>
                   <li className="py-4 text-4xl font-bold text-white">
-                    <Link href="/#about" onClick={() => toggleOpen()}>
+                    <Link href="/#about" aria-label="Go to About" onClick={() => toggleOpen()}>
                       About
                     </Link>
                   </li>
                   <li className="py-4 text-4xl font-bold text-white">
-                    <Link href="/#projects" onClick={() => toggleOpen()}>
+                    <Link href="/#projects" aria-label="Go to Projects" onClick={() => toggleOpen()}>
                       Projects
                     </Link>
                   </li>
                   <li className="py-4 text-4xl font-bold text-white">
-                    <Link href={Urls.Contact} onClick={() => toggleOpen()}>
+                    <Link href={Urls.Contact} aria-label="Go to Contact" className="hover:underline" onClick={() => toggleOpen()}>
                       Contact
                     </Link>
                   </li>
@@ -162,6 +162,7 @@ const Navbar = () => {
                     href={ProfilesLinks.linkedin}
                     rel="noreferrer"
                     target="_blank"
+                    aria-label="LinkedIn"
                   >
                     <div className="bg-[#ecf0f3] rounded-full  p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaLinkedinIn />
@@ -171,12 +172,13 @@ const Navbar = () => {
                     href={ProfilesLinks.Github}
                     rel="noreferrer"
                     target="_blank"
+                    aria-label="Github"
                   >
                     <div className="bg-[#ecf0f3] rounded-full  p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaGithub />
                     </div>
                   </Link>
-                  <Link href={Urls.Contact}>
+                  <Link href={Urls.Contact} aria-label="contact page">
                     <div className="bg-[#ecf0f3] rounded-full  p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <AiOutlineMail />
                     </div>
