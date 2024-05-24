@@ -28,7 +28,7 @@ export const projectsUrls = [
     url: "/projects/imageCompress",
     arial: "Compress Image information",
     backgroundImg: "/imageCompress.png",
-    /* backgroundVideo: "/imageCompress.mp4", */
+    backgroundVideo: "/imageCompress.mp4",
     tech: "Next JS",
   },
   {

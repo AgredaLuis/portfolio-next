@@ -37,6 +37,7 @@ const ProjectItem = ({
             className="rounded-xl h-full group-hover:opacity-10 object-cover"
             src={backgroundImg}
             alt="Project photo of one of our projects"
+            loading="lazy"
             width={600}
             height={600}
           />
