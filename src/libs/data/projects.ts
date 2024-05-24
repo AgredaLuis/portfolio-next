@@ -7,7 +7,7 @@ export const onewaytravel: Project = {
     on Vercel and is fully responsive. A few features to note with this project are lazy loading images using
     the Image component, built in routing. `,
   framework: "Next JS",
-  image: "/oneWayTravel.png",
+  image: "/oneWayTravel.webp",
   video: "/oneWayTravelVideo.mp4",
   url: "https://one-way.info/",
   technologies: [
@@ -24,7 +24,7 @@ export const shonenShop: Project = {
   name: "shonenShop",
   description: `I built this app to demonstrate knowledge working in Next JS and accessing API endpoints. This app was built using Next JS and is hosted on Vercel.`,
   framework: "Next JS",
-  image: "/shonenShop.png",
+  image: "/shonenShop.webp",
   url: "https://shonen-shop.vercel.app/",
   code: "https://github.com/AgredaLuis/gerich-restaurant",
   technologies: ["next JS", "Tailwind", "Typescript", "Prisma", "Zod"],
@@ -36,7 +36,7 @@ export const ImageCompress: Project = {
   accessing API endpoints. This app was built using Next JS and is
   hosted on Vercel. This application was built using the Image conversion & optimization API.`,
   framework: "Next JS",
-  image: "/imageCompress.png",
+  image: "/imageCompress.webp",
   video: "/imageCompress.mp4",
   url: "https://imagecompress-eight.vercel.app/",
   code: "https://github.com/AgredaLuis/imagecompress",

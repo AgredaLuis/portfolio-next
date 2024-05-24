@@ -20,7 +20,7 @@ const Main = () => {
             A Front-End Web Developer
           </h2>
           <h3 className="py-4 text-gray-600 sm:max-w-[70%] m-auto text-[18px] font-semibold">
-            I’m focused on building responsive front-end web applications
+            I&apos;m focused on building responsive front-end web applications
             integrating back-end technologies.
           </h3>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
