@@ -24,7 +24,6 @@ export const ImageItem = ({ backgroundImg, backgroundVideo, arial }: Props) => {
           className="rounded-xl h-full object-fill"
           src={backgroundImg}
           alt="Project photo of one of our projects"
-          placeholder="blur"
           loading="lazy"
           width={600}
           height={600}

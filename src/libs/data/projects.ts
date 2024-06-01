@@ -26,7 +26,7 @@ export const shonenShop: Project = {
   framework: "Next JS",
   image: "/shonenShop.webp",
   url: "https://shonen-shop.vercel.app/",
-  code: "https://github.com/AgredaLuis/gerich-restaurant",
+  code: "https://github.com/AgredaLuis/Shonen-shop",
   technologies: ["next JS", "Tailwind", "Typescript", "Prisma", "Zod"],
 };
 

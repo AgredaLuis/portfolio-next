@@ -17,7 +17,7 @@ export const projectsUrls = [
   {
     title: "OneWayTravel",
     url: "/projects/oneWayTravel",
-    arial: "OneWayTravel information",
+    arial: "Go to OneWayTravel information",
     backgroundImg: "/oneWayTravel2.webp",
     //backgroundVideo: "/oneWayTravelVideo.mp4",
     tech: "Next Js",
@@ -26,7 +26,7 @@ export const projectsUrls = [
   {
     title: "Compress Image",
     url: "/projects/imageCompress",
-    arial: "Compress Image information",
+    arial: "Go to Compress Image information",
     backgroundImg: "/imageCompress.webp",
     //backgroundVideo: "/imageCompress.mp4",
     tech: "Next JS",
@@ -34,7 +34,7 @@ export const projectsUrls = [
   {
     title: "Shonen Shop",
     url: "/projects/shonenShop",
-    arial: "Shonen Shop information",
+    arial: "Go to Shonen Shop information",
     backgroundImg: "/shonenShop.webp",
     tech: "Next JS",
   },
