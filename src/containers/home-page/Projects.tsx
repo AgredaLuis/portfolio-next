@@ -1,6 +1,6 @@
 import React from "react";
 
-import ProjectItem from "./ProjectItem";
+import ProjectItem from "../../components/ProjectItem";
 import { projectsUrls } from "@/libs";
 
 const Projects = () => {

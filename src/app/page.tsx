@@ -1,9 +1,9 @@
-import About from "@/components/About";
-import ContactCta from "@/components/ContactCta";
+import About from "@/containers/home-page/About";
+import ContactCta from "@/containers/home-page/ContactCta";
 import { Footer } from "@/components/Footer";
-import Main from "@/components/Main";
+import Main from "@/containers/home-page/Main";
 
-import Projects from "@/components/Projects";
+import Projects from "@/containers/home-page/Projects";
 
 export default function Home() {
   return (

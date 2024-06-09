@@ -4,7 +4,7 @@ import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import ContactForm from "./ContactForm";
+import ContactForm from "../../components/ContactForm";
 
 
 const Contact = () => {
@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <div className="w-full h-full py-20">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full bg-[#ecf0f3] ">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
+        <p className="text-xl tracking-widest uppercase font-extrabold text-[#5651e5]">
           Contact
         </p>
         <h2 className="py-4">Get In Touch</h2>
