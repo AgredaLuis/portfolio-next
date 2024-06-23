@@ -6,25 +6,25 @@ const About = () => {
   return (
     <div
       id="about"
-      className="w-full px-4 flex items-center py-16 md:px-4 bg-[#ecf0f3]"
+      className="relative w-full top-[-90px] px-4 flex items-center py-16 md:px-4 bg-[#ecf0f3]"
     >
-      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-6 bg-black p-8 rounded-[3rem]">
-        <div className="col-span-2 ">
-          <h3 className="uppercase text-xl tracking-widest font-bold text-[#9391ED]">
+      <div className="w-[85vw] max-w-[1480px] lg:h-[600px] m-auto md:grid grid-cols-3 gap-6 bg-black p-8 rounded-[3rem]">
+        <div className="col-span-2 flex flex-col justify-center">
+          <h3 className="uppercase text-2xl lg:text-4xl tracking-widest font-bold text-[#9391ED]">
             About
           </h3>
-          <h2 className="py-4 md:mx-2 text-white text-4xl">What I Do</h2>
-          <p className="py-2 w-[90%] text-white mx-auto">
+          <h2 className="py-2 my-2 md:mx-2 text-white text-4xl">What I Do</h2>
+          <p className="my-4 w-[90%] text-white mx-auto">
             I specialize in building mobile responsive front-end UI applications
             that connect with API’s and other backend technologies. I create
             custom-coded websites that are tailored to your brand. I Focus on
             accessibility, performance, and scalability, I also optimize your
             online presence to elevate your visibility in search rankings
           </p>
-          <div className="my-2 h-px w-[90%] bg-white"></div>
+          <div className="my-4 h-px w-[90%] bg-white"></div>
           <div className="flex flex-col md:flex-row w-[80%] md:items-center justify-between py-4 mx-auto">
             <div className="p-4">
-              <h3 className=" font-bold text-[#9391ED] pb-1">
+              <h3 className=" font-bold text-[#9391ED] pb-1 lg:text-xl">
                 Web Development
               </h3>
               <p className="text-gray-400 flex items-center py-1 gap-2">
@@ -41,7 +41,7 @@ const About = () => {
               </p>
             </div>
             <div className=" p-4">
-              <h3 className=" font-bold text-[#9391ED] pb-1">Web Design</h3>
+              <h3 className=" font-bold text-[#9391ED] pb-1 lg:text-xl">Web Design</h3>
               <p className="text-gray-400 flex items-center py-1 gap-2">
                 <FaCircleCheck className="text-[#ecf0f3]" />
                 Responsive Design
@@ -56,7 +56,7 @@ const About = () => {
               </p>
             </div>
             <div className="p-4">
-              <h3 className=" font-bold text-[#9391ED] ">SEO</h3>
+              <h3 className=" font-bold text-[#9391ED] lg:text-xl">SEO</h3>
               <p className="text-gray-400 flex items-center py-1 gap-2">
                 <FaCircleCheck className="text-[#ecf0f3]" />
                 Technical SEO

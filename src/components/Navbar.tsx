@@ -103,7 +103,7 @@ const Navbar = () => {
               initial="closed"
               animate="open"
               exit="closed"
-              className="fixed top-0 h-screen w-screen bg-blue-600 p-6 flex flex-col justify-center"
+              className="fixed top-0 h-screen w-screen bg-gradient-to-r from-[#5651e5] to-[#709dff] p-6 flex flex-col justify-center"
             >
               <motion.div
                 variants={{

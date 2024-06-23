@@ -12,14 +12,14 @@ const Main = () => {
       className="w-full h-screen text-center bg-[#ecf0f3] "
     >
       <div className="max-w-[1240px] w-full h-full mx-auto p-4 flex justify-center items-center">
-        <div className="animate-slide">
-          <h1 className="pt-8  text-gray-700 text-5xl font-extrabold my-2">
+        <div className="animate-slide ">
+          <h1 className="pt-8  text-gray-700 text-5xl font-bold my-2 lg:text-7xl">
             Hi, I&#39;m <span className="text-[#5651e5]">Luis Agreda</span>
           </h1>
-          <h2 className="py-2 text-gray-700 text-4xl font-extrabold">
+          <h2 className="py-2 text-gray-700 text-4xl font-bold lg:text-6xl tracking-wide">
             A Front-End Web Developer
           </h2>
-          <h3 className="py-4 text-gray-600 sm:max-w-[70%] m-auto text-[18px] font-semibold">
+          <h3 className="py-4 text-gray-600 sm:max-w-[70%] m-auto text-[18px] font-semibold lg:text-2xl">
             I&apos;m focused on building responsive front-end web applications
             integrating back-end technologies.
           </h3>

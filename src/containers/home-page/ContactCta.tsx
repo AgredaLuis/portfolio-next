@@ -10,8 +10,8 @@ const ContactCta = () => {
     >
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 bg-black p-8  md:border-4 md:boder-white rounded-[3rem]">
         {/* left */}
-        <div className="w-full h-full rounded-xl col-span-1">
-          <div className=" h-full w-full ">
+        <div className="w-full h-full rounded-xl col-span-1 ">
+          <div className=" h-full w-full flex justify-center ">
             <Image
               className="rounded-xl hover:scale-105 ease-in duration-300 object-cover"
               src="/normalPresentation.jpg"
@@ -26,11 +26,11 @@ const ContactCta = () => {
         <div className="h-auto col-span-2 rounded-xl lg:p-4">
           <div className="h-full flex flex-col justify-center items-start p-4 gap-14">
             <div>
-              <h3 className="uppercase text-xl py-4 tracking-widest text-[#9391ED] font-extrabold">
+              <h3 className="uppercase text-xl py-4 tracking-widest text-[#9391ED] font-extrabold lg:text-4xl">
                 Let&apos;s chat
               </h3>
               <h2 className="py-2 md:py-4 px-2 text-white text-4xl">
-                Let&apos;s schedule a your product tour
+              Curious how it works? Explore with a product tour.
               </h2>
               <p className="py-2 px-2 text-white ">
                 Got a project Idea? Need to know what requirements it requires?

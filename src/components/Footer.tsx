@@ -62,15 +62,15 @@ export const Footer = () => {
 
         <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-gray-700 uppercase">
+            <h2 className="mb-6 text-lg font-semibold text-gray-700 uppercase">
               Navigation
             </h2>
-            <ul className="text-gray-700">
+            <ul className="text-gray-900 font-medium">
               <li className="mb-4">
                 <Link
                   href="/"
-                  className="hover:underline"
                   aria-label="HomePage"
+                  className="alink-a"
                 >
                   Home
                 </Link>
@@ -78,8 +78,8 @@ export const Footer = () => {
               <li className="mb-4">
                 <Link
                   href="#about"
-                  className="hover:underline"
                   aria-label="Go to abaout section"
+                  className="alink-a"
                 >
                   About
                 </Link>
@@ -87,8 +87,8 @@ export const Footer = () => {
               <li className="mb-4">
                 <Link
                   href="#projects"
-                  className="hover:underline"
                   aria-label="Go to projects"
+                  className="alink-a"
                 >
                   Projects
                 </Link>
@@ -96,8 +96,8 @@ export const Footer = () => {
               <li className="mb-4">
                 <Link
                   href="/contact"
-                  className="hover:underline"
                   aria-label="Go to contact"
+                  className="alink-a"
                 >
                   Contact
                 </Link>
@@ -105,17 +105,17 @@ export const Footer = () => {
             </ul>
           </div>
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-gray-700 uppercase">
+            <h2 className="mb-6 text-lg font-semibold text-gray-700 uppercase">
               Resources
             </h2>
-            <ul className="text-gray-600">
+            <ul className="text-gray-900 font-medium">
               <li className="mb-4">
                 <a
                   href={onewaytravel.url}
-                  className="hover:underline "
                   rel="noreferrer"
                   target="_blank"
                   aria-label="OneWayTravel website"
+                  className="alink-a"
                 >
                   OneWayTravel
                 </a>
@@ -123,10 +123,10 @@ export const Footer = () => {
               <li className="mb-4">
                 <a
                   href={ImageCompress.url}
-                  className="hover:underline"
                   rel="noreferrer"
                   target="_blank"
-                  aria-label="Meals App website"
+                  aria-label="Image Compres website"
+                  className="alink-a"
                 >
                   ImageCompress
                 </a>
@@ -134,10 +134,10 @@ export const Footer = () => {
               <li className="mb-4">
                 <a
                   href={shonenShop.url}
-                  className="hover:underline"
                   rel="noreferrer"
                   target="_blank"
                   aria-label="Shonen Shop website"
+                  className="alink-a"
                 >
                   Shonen Shop
                 </a>
@@ -145,17 +145,17 @@ export const Footer = () => {
             </ul>
           </div>
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-gray-700 uppercase">
+            <h2 className="mb-6 text-lg font-semibold text-gray-700 uppercase">
               Profiles
             </h2>
-            <ul className="text-gray-600">
+            <ul className="text-gray-900 font-medium">
               <li className="mb-4">
                 <a
                   href="https://www.frontendmentor.io/profile/AgredaLuis"
-                  className="hover:underline"
                   rel="noreferrer"
                   target="_blank"
                   aria-label="Frontend Mentor website"
+                  className="alink-a"
                 >
                   Frontend Mentor
                 </a>
@@ -163,10 +163,10 @@ export const Footer = () => {
               <li>
                 <a
                   href="https://www.freecodecamp.org/AgredaLuis"
-                  className="hover:underline"
                   rel="noreferrer"
                   target="_blank"
                   aria-label="FreeCodeCamp website"
+                  className="alink-a"
                 >
                   FreeCodeCamp
                 </a>
