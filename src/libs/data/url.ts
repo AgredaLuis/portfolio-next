@@ -32,9 +32,9 @@ export const projectsUrls = [
     tech: "Next JS",
   },
   {
-    title: "Shonen Shop",
-    url: "/projects/shonenShop",
-    arial: "Go to Shonen Shop information",
+    title: "Pachus Shop",
+    url: "/projects/PachusShop",
+    arial: "Go to Pachus Shop information",
     backgroundImg: "/shonenShop.webp",
     tech: "Next JS",
   },

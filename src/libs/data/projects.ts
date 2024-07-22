@@ -21,11 +21,11 @@ export const onewaytravel: Project = {
 };
 
 export const shonenShop: Project = {
-  name: "shonenShop",
+  name: "PachusShop",
   description: `I built this app to demonstrate knowledge working in Next JS and accessing API endpoints. This app was built using Next JS and is hosted on Vercel.`,
   framework: "Next JS",
   image: "/shonenShop.webp",
-  url: "https://shonen-shop.vercel.app/",
+  url: "https://pachusshop.vercel.app/",
   code: "https://github.com/AgredaLuis/Shonen-shop",
   technologies: ["next JS", "Tailwind", "Typescript", "Prisma", "Zod"],
 };
