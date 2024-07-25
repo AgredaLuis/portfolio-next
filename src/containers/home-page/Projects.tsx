@@ -15,7 +15,7 @@ const Projects = () => {
           Projects
         </h3>
         <h2 className="py-4 md:mx-2 text-4xl">Selected Work&apos;s</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-6">
           {projectsUrls.map((project) => (
             <ProjectItem
               key={project.title}

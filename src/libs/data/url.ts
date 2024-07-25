@@ -35,7 +35,14 @@ export const projectsUrls = [
     title: "Pachus Shop",
     url: "/projects/PachusShop",
     arial: "Go to Pachus Shop information",
-    backgroundImg: "/shonenShop.webp",
+    backgroundImg: "/pashusShop.png",
+    tech: "Next JS",
+  },
+  {
+    title: "Saas Landing Page",
+    url: "/projects/SaasLandingPage",
+    arial: "Go to Saas Landing Page information",
+    backgroundImg: "/saasLadingPage.png",
     tech: "Next JS",
   },
 ];

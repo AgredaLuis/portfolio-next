@@ -29,7 +29,7 @@ const ContactCta = () => {
               <h3 className="uppercase text-xl py-4 tracking-widest text-[#9391ED] font-extrabold lg:text-4xl">
                 Let&apos;s chat
               </h3>
-              <h2 className="py-2 md:py-4 px-2 text-white text-4xl">
+              <h2 className="py-2 md:py-4 px-2 text-white text-3xl">
               Curious how it works? Explore with a product tour.
               </h2>
               <p className="py-2 px-2 text-white ">

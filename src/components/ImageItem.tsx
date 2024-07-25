@@ -8,7 +8,7 @@ interface Props {
 }
 export const ImageItem = ({ backgroundImg, backgroundVideo, arial }: Props) => {
   return (
-    <div className="min-h-[250px] max-h-[350px] w-full flex items-center justify-center rounded-xl group-hover:opacity-10">
+    <div className="h-full max-h-[330px] w-full flex items-center justify-center rounded-xl group-hover:opacity-10">
       {backgroundVideo ? (
         <video
           lang="en"
@@ -21,7 +21,7 @@ export const ImageItem = ({ backgroundImg, backgroundVideo, arial }: Props) => {
         />
       ) : (
         <Image
-          className="rounded-xl h-full object-fill"
+          className="rounded-xl h-full object-cover"
           src={backgroundImg}
           alt="Project photo of one of our projects"
           loading="lazy"
