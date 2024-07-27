@@ -27,8 +27,8 @@ const Main = () => {
               target="_blank"
               aria-label="LinkedIn"
             >
-              <div className=" rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-                <FaLinkedinIn size={20} />
+              <div className=" rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
+                <FaLinkedinIn size={24} />
               </div>
             </Link>
             <Link
@@ -36,14 +36,13 @@ const Main = () => {
               rel="noreferrer"
               target="_blank"
               aria-label="GitHub"
+              className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300"
             >
-              <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-                <FaGithub size={20} />
-              </div>
+                <FaGithub size={24}/>
             </Link>
             <Link href="/contact" aria-label="Email">
-              <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-                <AiOutlineMail size={20} />
+              <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
+                <AiOutlineMail size={24} />
               </div>
             </Link>
             <Link
@@ -52,8 +51,8 @@ const Main = () => {
               target="_blank"
               aria-label="Resume"
             >
-              <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-                <BsFillPersonLinesFill size={20} />
+              <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
+                <BsFillPersonLinesFill size={24} />
               </div>
             </Link>
           </div>

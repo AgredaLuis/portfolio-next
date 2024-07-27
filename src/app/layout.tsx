@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import ClientOnlyComponent from "@/HOCs/LennisHocs";
-const inter = Inter({ subsets: ["latin"] });
+
+/* const inter = Inter({ subsets: ["latin"] }); */
+
+const font = Manrope({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+});
 
 export const metadata: Metadata = {
   title: "Luis Agreda | Front-End Developer",
@@ -26,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={font.className}>
         <Navbar />
         <ClientOnlyComponent>{children}</ClientOnlyComponent>
       </body>

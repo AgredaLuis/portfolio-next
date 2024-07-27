@@ -6,7 +6,6 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import { ImageCompress, onewaytravel, shonenShop } from "@/libs/data/projects";
 import { ProfilesLinks, Urls } from "@/libs";
 
-
 export const Footer = () => {
   return (
     <footer className="md:sticky md:-z-10 bottom-0 left-0 mx-auto py-16 w-full max-w-screen-xl p-4">
@@ -22,8 +21,8 @@ export const Footer = () => {
               target="_blank"
               aria-label="LinkedIn"
             >
-              <div className="bg-[#ecf0f3] rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <FaLinkedinIn />
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <FaLinkedinIn size={20} />
               </div>
             </Link>
             <Link
@@ -32,8 +31,8 @@ export const Footer = () => {
               target="_blank"
               aria-label="GitHub"
             >
-              <div className="bg-[#ecf0f3] rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <FaGithub />
+              <div className=" rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <FaGithub size={20} />
               </div>
             </Link>
 
@@ -43,8 +42,8 @@ export const Footer = () => {
               target="_blank"
               aria-label="Email"
             >
-              <div className="bg-[#ecf0f3] rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <AiOutlineMail />
+              <div className=" rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <AiOutlineMail size={20} />
               </div>
             </Link>
             <Link
@@ -52,10 +51,9 @@ export const Footer = () => {
               rel="noreferrer"
               target="_blank"
               aria-label="Resume"
+              className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300"
             >
-              <div className="bg-[#ecf0f3] rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <BsFillPersonLinesFill />
-              </div>
+              <BsFillPersonLinesFill size={20} />
             </Link>
           </div>
         </div>
@@ -67,11 +65,7 @@ export const Footer = () => {
             </h2>
             <ul className="text-gray-900 font-medium">
               <li className="mb-4">
-                <Link
-                  href="/"
-                  aria-label="HomePage"
-                  className="alink-a"
-                >
+                <Link href="/" aria-label="HomePage" className="alink-a">
                   Home
                 </Link>
               </li>
@@ -139,7 +133,7 @@ export const Footer = () => {
                   aria-label="Shonen Shop website"
                   className="alink-a"
                 >
-                  Shonen Shop
+                  Pachus Shop
                 </a>
               </li>
             </ul>
