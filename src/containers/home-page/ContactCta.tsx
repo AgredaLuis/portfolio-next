@@ -1,14 +1,14 @@
 import ButtomsLink from "@/animations/Buttons/ButtomsLink";
 import Image from "next/image";
 import Link from "next/link";
-import {  FaArrowRightLong } from "react-icons/fa6";
+import { FaArrowRightLong } from "react-icons/fa6";
 const ContactCta = () => {
   return (
     <div
       about="contact"
-      className=" w-full py-16 bg-black text-white flex items-center justify-center md:rounded-b-[70px]"
+      className="py-16 bg-black flex items-center justify-center md:rounded-b-[70px]"
     >
-      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 bg-black p-8  md:border-4 md:boder-white rounded-[3rem]">
+      <div className="w-[85vw] max-w-[1200px] m-auto md:grid grid-cols-3 p-8 bg-white/15 text-white rounded-[3rem]">
         {/* left */}
         <div className="w-full h-full rounded-xl col-span-1 ">
           <div className=" h-full w-full flex justify-center ">
@@ -30,7 +30,7 @@ const ContactCta = () => {
                 Let&apos;s chat
               </h3>
               <h2 className="py-2 md:py-4 px-2 text-white text-3xl">
-              Curious how it works? Explore with a product tour.
+                Curious how it works? Explore with a product tour.
               </h2>
               <p className="py-2 px-2 text-white ">
                 Got a project Idea? Need to know what requirements it requires?

@@ -7,10 +7,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Main = () => {
   return (
-    <div
-      id="home"
-      className="w-full h-screen text-center bg-[#ecf0f3] "
-    >
+    <div id="home" className="w-full h-screen text-center bg-[#ecf0f3] ">
       <div className="max-w-[1240px] w-full h-full mx-auto p-4 flex justify-center items-center">
         <div className="animate-slide ">
           <h1 className="pt-8  text-gray-700 text-5xl font-bold my-2 lg:text-7xl">
@@ -30,8 +27,8 @@ const Main = () => {
               target="_blank"
               aria-label="LinkedIn"
             >
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <FaLinkedinIn />
+              <div className=" rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+                <FaLinkedinIn size={20} />
               </div>
             </Link>
             <Link
@@ -40,13 +37,13 @@ const Main = () => {
               target="_blank"
               aria-label="GitHub"
             >
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <FaGithub />
+              <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+                <FaGithub size={20} />
               </div>
             </Link>
             <Link href="/contact" aria-label="Email">
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <AiOutlineMail />
+              <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+                <AiOutlineMail size={20} />
               </div>
             </Link>
             <Link
@@ -55,8 +52,8 @@ const Main = () => {
               target="_blank"
               aria-label="Resume"
             >
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <BsFillPersonLinesFill />
+              <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+                <BsFillPersonLinesFill size={20} />
               </div>
             </Link>
           </div>

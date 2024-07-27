@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed w-full z-30 flex justify-center pt-7 md:pt-[25px] xl:pt-4 2xl:pt-[24px] bg-transparent ">
-      <div className="w-[78%] z-20 bg-black h-20 2xl:h-[86px] rounded-full flex items-center justify-between py-3 md:py-3 xl:py-[16px] px-8 text-white animate-appear">
+      <div className="w-[78%] z-20 bg-white shadow-[1px_2px_10px_#00000050] h-20 2xl:h-[86px] rounded-full flex items-center justify-between py-3 md:py-3 xl:py-[16px] px-8 text-black animate-appear">
         <div className="text-xl mr-1 sm:hidden"><Link href={Urls.Home}>LA</Link></div>
         <div className="hidden sm:block 2xl:text-xl">
           <Link href={Urls.Home}>Luis Agreda</Link>
