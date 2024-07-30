@@ -13,9 +13,9 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full z-30 flex justify-center pt-7 md:pt-[25px] xl:pt-4 2xl:pt-[24px] bg-transparent ">
       <div className="w-[78%] z-20 bg-white shadow-[1px_2px_10px_#00000050] h-20 2xl:h-[86px] rounded-full flex items-center justify-between py-3 md:py-3 xl:py-[16px] px-8 text-black animate-appear">
-        <div className="text-xl mr-1 sm:hidden"><Link href={Urls.Home}>LA</Link></div>
-        <div className="hidden sm:block 2xl:text-xl">
-          <Link href={Urls.Home}>Luis Agreda</Link>
+        <div className="mr-1 sm:hidden text-2xl"><Link href={Urls.Home} className="font-bold">LA</Link></div>
+        <div className="hidden sm:block text-2xl">
+          <Link href={Urls.Home} className="font-bold">Luis Agreda</Link>
         </div>
         <ul className="hidden md:flex gap-4">
           <li className="2xl:text-lg">
@@ -26,11 +26,6 @@ const Navbar = () => {
           <li className="2xl:text-lg">
             <Link href="/#projects" className="hover:underline">
                 <AnimatedLink title="Projects" />
-            </Link>
-          </li>
-          <li className="2xl:text-lg">
-            <Link href={Urls.Contact} className="hover:underline">
-              <AnimatedLink title="Contact" />
             </Link>
           </li>
         </ul>

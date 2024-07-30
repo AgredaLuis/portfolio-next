@@ -13,8 +13,7 @@ type Inputs = {
   subject: string;
 };
 const ContactForm = () => {
-
-    const [isSuccess, setIsSuccess] = useState<boolean>(false);
+  const [isSuccess, setIsSuccess] = useState<boolean>(false);
   const {
     register,
     handleSubmit,
@@ -26,10 +25,15 @@ const ContactForm = () => {
   });
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
-
-    const serviceId = process.env.NEXT_PUBLIC__SERVICE_ID ? process.env.NEXT_PUBLIC__SERVICE_ID.toString() : '';
-    const templateId = process.env.NEXT_PUBLIC__TEMPLATE_ID ? process.env.NEXT_PUBLIC__TEMPLATE_ID.toString() : '';
-    const publicKey = process.env.NEXT_PUBLIC__PUBLIC_KEY ? process.env.NEXT_PUBLIC__PUBLIC_KEY.toString() : '';
+    const serviceId = process.env.NEXT_PUBLIC__SERVICE_ID
+      ? process.env.NEXT_PUBLIC__SERVICE_ID.toString()
+      : "";
+    const templateId = process.env.NEXT_PUBLIC__TEMPLATE_ID
+      ? process.env.NEXT_PUBLIC__TEMPLATE_ID.toString()
+      : "";
+    const publicKey = process.env.NEXT_PUBLIC__PUBLIC_KEY
+      ? process.env.NEXT_PUBLIC__PUBLIC_KEY.toString()
+      : "";
     emailjs
       .send(
         serviceId,
@@ -44,15 +48,12 @@ const ContactForm = () => {
       )
       .then((result) => {
         setIsSuccess(true);
-        toast.success("Message sent successfully!", {
-          
-        })
-          // Limpiar los campos del formulario
-          reset(); 
-        
+        toast.success("Message sent successfully!", {});
+        // Limpiar los campos del formulario
+        reset();
       })
       .catch((error) => {
-        toast.error("Message not sent!")
+        toast.error("Message not sent!");
         reset();
       });
   };
@@ -62,7 +63,9 @@ const ContactForm = () => {
       <div className="p-4">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="flex flex-col py-2">
-            <label typeof="email" className="uppercase text-sm py-2">Email<span className="text-red-500 text-lg">*</span></label>
+            <label typeof="email" className="uppercase text-sm py-2">
+              Email<span className="text-red-500 text-lg">*</span>
+            </label>
             <input
               className="border-2 rounded-lg p-3 flex border-gray-300"
               id="email_from"
@@ -75,7 +78,9 @@ const ContactForm = () => {
             )}
           </div>
           <div className="flex flex-col py-2">
-            <label typeof="subject" className="uppercase text-sm py-2">Subject<span className="text-red-500 text-lg">*</span></label>
+            <label typeof="subject" className="uppercase text-sm py-2">
+              Subject<span className="text-red-500 text-lg">*</span>
+            </label>
             <input
               className="border-2 rounded-lg p-3 flex border-gray-300"
               type="text"
@@ -88,7 +93,9 @@ const ContactForm = () => {
             )}
           </div>
           <div className="flex flex-col py-2">
-            <label className="uppercase text-sm py-2">Message<span className="text-red-500 text-lg">*</span></label>
+            <label className="uppercase text-sm py-2">
+              Message<span className="text-red-500 text-lg">*</span>
+            </label>
             <textarea
               className="border-2 rounded-lg p-3 border-gray-300"
               placeholder="Im looking for Front-End Developer for... "
@@ -99,20 +106,24 @@ const ContactForm = () => {
               <p className="text-red-500">{errors.message.message}</p>
             )}
           </div>
-          {isSuccess && <p className="text-white text-center bg-green-500 rounded-md">Your message has been sent!</p>}
-          <button
-            type="submit"
-            id="submit"
-            className="w-full p-4 text-gray-100 mt-4 flex justify-center items-center"
-            aria-label="Send email"
-          >
-            <AnimatedLink title={"Send Message"} />
-          </button>
+          {isSuccess && (
+            <p className="text-white text-center bg-green-500 rounded-md">
+              Your message has been sent!
+            </p>
+          )}
+          <div className="w-full flex items-center justify-center">
+            <button
+              type="submit"
+              id="submit"
+              className="w-[90%] p-4 text-gray-100 mt-4 flex justify-center items-center"
+              aria-label="Send email"
+            >
+              <AnimatedLink title={"Send Message"} />
+            </button>
+          </div>
         </form>
-
-
       </div>
-      <Toaster position="bottom-right"/>
+      <Toaster position="bottom-right" />
     </div>
   );
 };
