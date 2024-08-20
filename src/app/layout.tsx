@@ -35,7 +35,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className}>
         <Navbar />
-        <ClientOnlyComponent>{children}</ClientOnlyComponent>
+        {children}
       </body>
     </html>
   );
