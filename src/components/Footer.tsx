@@ -3,7 +3,7 @@ import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
-import { ImageCompress, onewaytravel, shonenShop } from "@/libs/data/projects";
+import { LinkAPlace, onewaytravel, shonenShop } from "@/libs/data/projects";
 import { ProfilesLinks, Urls } from "@/libs";
 
 export const Footer = () => {
@@ -116,13 +116,13 @@ export const Footer = () => {
               </li>
               <li className="mb-4">
                 <a
-                  href={ImageCompress.url}
+                  href={LinkAPlace.url}
                   rel="noreferrer"
                   target="_blank"
-                  aria-label="Image Compres website"
+                  aria-label="LinkaPlace website"
                   className="alink-a"
                 >
-                  ImageCompress
+                  LinkaPlace
                 </a>
               </li>
               <li className="mb-4">

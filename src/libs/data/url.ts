@@ -24,12 +24,12 @@ export const projectsUrls = [
   },
 
   {
-    title: "Compress Image",
-    url: "/projects/imageCompress",
-    arial: "Go to Compress Image information",
-    backgroundImg: "/imageCompress.webp",
-    //backgroundVideo: "/imageCompress.mp4",
-    tech: "Next JS",
+    title: "LinkaPlace",
+    url: "/projects/LinkaPlace",
+    arial: "Go to LinkaPlace information",
+    backgroundImg: "/linkaplace.png",
+    //backgroundVideo: "/linkaplace.mp4",
+    tech: "React JS",
   },
   {
     title: "Pachus Shop",

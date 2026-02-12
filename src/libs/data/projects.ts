@@ -29,15 +29,13 @@ export const shonenShop: Project = {
   technologies: ["next JS", "Tailwind", "Typescript", "Prisma", "Zod"],
 };
 
-export const ImageCompress: Project = {
-  name: "ImageCompress",
-  description: `Application made for developers who can integrate this API into their projects, you can also use the app to reduce the weight of the images.`,
-  framework: "Next JS",
-  image: "/imageCompress.webp",
-  video: "/imageCompress.mp4",
-  url: "https://imagecompress-eight.vercel.app/",
-  code: "https://github.com/AgredaLuis/imagecompress",
-  technologies: ["React JS", "Tailwind", "Typescript", "Vercel", "Toastify"],
+export const LinkAPlace: Project = {
+  name: "LinkaPlace",
+  description: `Unique spaces for events. Celebrate weddings, meetings or retreats. LinkaPlace operates similarly to Airbnb, specifically focused on the Dominican Republic market. It creates a seamless bridge between hosts offering rooms or properties and travelers seeking authentic local experiences.`,
+  framework: "React",
+  image: "/linkaplace.png",
+  url: "https://linkaplace.com/",
+  technologies: ["React", "React Router", "Tailwind CSS", "Framer Motion", "Leaflet", "Radix UI", "Nginx"],
 };
 
 export const SaasLandingPage: Project = {
@@ -62,8 +60,8 @@ export function getProjects(id: string) {
       return onewaytravel;
     case shonenShop.name.toLowerCase():
       return shonenShop;
-    case ImageCompress.name.toLowerCase():
-      return ImageCompress;
+    case LinkAPlace.name.toLowerCase():
+      return LinkAPlace;
     case SaasLandingPage.name.toLowerCase():
       return SaasLandingPage;
     default:
